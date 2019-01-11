@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/bare-components",
-  "version": "0.8.2",
+  "version": "0.0.0",
   "description": "Minimal Vue Account components without any styling applied",
   "license": "MIT",
   "main": "dist/.umd.js",

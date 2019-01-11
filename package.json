@@ -1,6 +1,6 @@
 {
   "name": "vue-accounts",
-  "version": "0.8.2",
+  "version": "0.0.0",
   "description": "A set of extendable Vue plugins and mixins to speed up building an accounts system",
   "repository": "https://github.com/chris-visser/vue-accounts",
   "license": "MIT",
