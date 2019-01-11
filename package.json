@@ -1,0 +1,16 @@
+{
+  "name": "vue-accounts",
+  "version": "0.8.2",
+  "description": "A set of extendable Vue plugins and mixins to speed up building an accounts system",
+  "repository": "https://github.com/chris-visser/vue-accounts",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "lerna": "^3.10.5",
+    "vuepress": "^0.14.8"
+  },
+  "dependencies": {}
+}
