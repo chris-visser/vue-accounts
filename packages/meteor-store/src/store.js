@@ -1,10 +1,11 @@
-import { Meteor } from 'meteor/meteor';
-import { Accounts } from 'meteor/accounts-base';
+import getMeteorClientPackage from './getAtmospherePackage';
 
-/* eslint no-console: off */
+const { Meteor } = getMeteorClientPackage('meteor');
+const { Accounts } = getMeteorClientPackage('accounts-base');
+
 export default {
   state: {
-    userId: Meteor.userId(), // On initial load the userId will come from Meteor
+    userId: null, // On initial load the userId will come from Meteor
     email: null,
     isEmailVerified: null,
     profile: null,
@@ -40,7 +41,6 @@ export default {
       return new Promise((resolve, reject) => {
         Accounts.createUser({ email, password, profile }, (error, result) => {
           if (error) {
-            console.log(error);
             reject(error.reason);
           } else {
             resolve(result);
@@ -52,7 +52,6 @@ export default {
       return new Promise((resolve, reject) => {
         Meteor.loginWithPassword(email, password, (error, result) => {
           if (error) {
-            console.log(error);
             reject(error.reason);
           } else {
             resolve(result);
@@ -64,7 +63,6 @@ export default {
       return new Promise((resolve, reject) => {
         Meteor.logout((error, result) => {
           if (error) {
-            console.log(error);
             reject(error.reason);
           } else {
             resolve(result);
@@ -82,7 +80,6 @@ export default {
       return new Promise((resolve, reject) => {
         Accounts.forgotPassword({ email }, (error, result) => {
           if (error) {
-            console.log(error);
             reject(error.reason);
           } else {
             resolve(result);
@@ -102,7 +99,6 @@ export default {
       return new Promise((resolve, reject) => {
         Accounts.resetPassword(token, password, (error, result) => {
           if (error) {
-            console.log(error);
             reject(error.reason);
           } else {
             resolve(result);

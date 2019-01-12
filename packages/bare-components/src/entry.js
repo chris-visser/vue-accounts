@@ -28,6 +28,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export components
-export * from './mixins';
 export * from './components';
-export { default as AuthStorePlugin } from './plugins/store';

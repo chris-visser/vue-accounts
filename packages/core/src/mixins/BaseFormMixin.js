@@ -52,18 +52,16 @@ export default {
         this.triggerError(`Method "${this.$options.method}" not implemented. Did you forget to add a vue-accounts plugin?`);
       }
 
-      try {
-        const result = await method(payload);
 
-        this.status = 'success';
+      await method(payload)
+        .then((result) => {
+          this.status = 'success';
 
-        this.$emit('success', result);
+          this.$emit('success', result);
 
-        setTimeout(() => this.status = 'idle', this.$options.resetTimeout); // Reset state after 3 seconds
-
-      } catch (error) {
-        this.triggerError(error);
-      }
+          setTimeout(() => this.status = 'idle', this.$options.resetTimeout); // Reset state after 3 seconds
+        })
+        .catch(this.triggerError);
     },
     /**
      * @param {String} error
@@ -72,7 +70,8 @@ export default {
       this.status = 'error';
       this.error = error.toString();
       this.$emit('error', error);
-      throw new Error(error);
+      // throw new Error(error);
+      console.error(error);
     },
   },
 };

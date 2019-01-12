@@ -7,14 +7,14 @@
     <input type="password" name="password" v-model="password" placeholder="Password" />
     <input type="password" name="repeatPassword" v-model="repeatPassword" placeholder="Repeat Password" />
 
-    <p v-if="error"><strong>Error:</strong> {{error}}</p>
+    <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
 
     <input type="submit" value="Reset" />
   </form>
 </template>
 
 <script>
-  import ResetPasswordFormMixin from '../../mixins/ResetPasswordFormMixin';
+  import { ResetPasswordFormMixin } from '@vue-accounts/core';
 
   export default {
     mixins: [ResetPasswordFormMixin],

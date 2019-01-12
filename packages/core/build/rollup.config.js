@@ -5,6 +5,7 @@ import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify-es';
 import resolve from 'rollup-plugin-node-resolve';
 import nodent from 'rollup-plugin-nodent';
+import babel from 'rollup-plugin-babel';
 import minimist from 'minimist';
 
 const argv = minimist(process.argv.slice(2));
@@ -30,9 +31,15 @@ const config = {
     buble({
       objectAssign: 'Object.assign',
     }),
-    nodent(),
+    nodent({
+      promises: true,
+      noRuntime: true,
+    }),
     resolve({
       extensions: ['.mjs', '.js', '.jsx', '.json', '.vue'],
+    }),
+    babel({
+      exclude: 'node_modules/**', // only transpile our source code
     }),
   ],
 };

@@ -30,7 +30,10 @@ const config = {
     buble({
       objectAssign: 'Object.assign',
     }),
-    nodent(),
+    nodent({
+      promises: true,
+      noRuntime: true,
+    }),
     resolve({
       extensions: ['.mjs', '.js', '.jsx', '.json', '.vue'],
     }),
