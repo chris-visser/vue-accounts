@@ -1,23 +1,10 @@
-# Naming options
+# Packages
 
-Potential names for packages that connect vue-accounts to identity providers:
+The packages directory contains officially supported addon packages for vue-accounts. 
+There are 3 types of addons:
 
-Joda format:
-- `provider-{library}`
-- `store-{library}`
+- **Stores** form the connection between the Vuex store and the backend / identity provider
+- **Components** add the forms, buttons and behaviors to the accounts system
+- **Strategies** form the onboarding flows by hiding/showing, redirecting etc.
 
-Human format:
-- `{library}-provider`
-- `{library}-store`
-
-Potential names for libraries that provide the view layer like forms and buttons:
-
-Joda format:
-- `ui-{library}`
-- `components-{library}`
-- `view-{library}`
-
-Human format:
-- `{library}-ui`: Eg. `vuetify-ui`
-- `{library}-components`: Eg. `vuetify-components`
-- `{library}-views`: Eg. `vuetify-views`
+TODO Extend docs about packages
