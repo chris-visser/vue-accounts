@@ -1,16 +1,16 @@
-# Introduction
-
-Vue Accounts provides a set of plugins, components and mixins that 
-work really well together to form a fully functional accounts system. 
-This includes login, registration, password reset, forgot password and e-mail 
-verification flows.
-
-Vue accounts is:
-
-- **Pluggable** Connect to any identity provider via pre-build Account Store Plugins, or build your own.
-- **Composable** Can be used with popular component libraries like 
-[Vuetify](https://vuetifyjs.com/en/) or [Vue Bootstrap](https://bootstrap-vue.js.org/) 
-or you build your own components.
-- **Custom strategies** Add a desired strategy for complete control over your required onboarding flow: 
-  - **Redirect strategy** will add a redirect based login flow (putting forms on separate routes / pages).
-  - **Modal strategy** will make a modal pop-up for un-authenticated users.
+---
+home: true
+heroImage: /favicon.png
+heroText: Vue Accounts
+tagline: Easily integrate and build your own account interface with Vue and any backend
+actionText: Get Started →
+actionLink: /guide/getting-started
+features:
+- title: Extendable
+  details: A tiny, but extendable core that allows drop-in accounts functionality with zero configuration.
+- title: Drop in Components
+  details: Use component library addons like Vuetify or Bootstrap to provide functionality in your preferred design or build your own.
+- title: Use any account backend
+  details: Either use a drop-in Vuex module like the Meteor Store or add your required store with actions that fit on your preferred accounts backend.
+footer: MIT Licensed | Copyright © 2019-present Chris Visser - Cloudspider
+---

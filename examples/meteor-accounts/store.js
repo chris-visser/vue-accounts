@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import { AccountStorePlugin } from '@vue-accounts/core';
-import MeteorStore, { StorePlugin } from '@vue-accounts/meteor';
+import MeteorStore, { StorePlugin } from '@vue-accounts/meteor-store';
 
 Vue.use(Vuex);
 
