@@ -1,15 +1,17 @@
-# Stores
+# Vuex Store Modules
+If you use the VuexStorePlugin you will need a store module to hold the account information 
+and to expose actions. You can choose to either build your own account store module or to use 
+a pre-made one. 
 
-Account stores are plugins that expose global methods that link back to a Vuex store of your choice. 
-This allows swapping to another identity provider without having to modifying any components or mixins.
 
 ## Pre-made
-Vue Accounts comes with a number of pre-made store plugins. You can select one, or decide to [make your own store](#building-your-own-store).
 
- - [Vue Accounts Meteor]() - (Coming soon) Integration with Meteor's account system.
+ - [Vue Accounts Meteor](/meteor-store) - Integration with Meteor's account system.
  
 ## Building your own store
-You can add your own account store just like any other store:
+
+You can add your own account store just like any other Vuex store, but it depends ofcourse 
+on your preferred API client! 
 
 *./store.js*
 
@@ -37,14 +39,19 @@ export default {
 },
 ```
 
-Simply implement the backend methods in your store, but be sure to return a promise. 
+Simply implement the api methods in your store, but be sure to return a promise. 
 This makes the component mixins able to provide a loading state to each auth component when needed.
 
-## Namespacing
+#### Namespacing
 
 You can have a namespaced store module. In that case set the 
 `namespace` option on your store plugin to make it aware of where to find it:
 
 ```javascript
 Vue.use(AccountStorePlugin, { namespace: 'account' });
+```
+
+#### Error Handling
+
+
 ```

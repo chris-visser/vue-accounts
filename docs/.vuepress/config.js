@@ -38,12 +38,13 @@ module.exports = {
         ],
         sidebar: [
           '/',
-          '/guide/getting-started',
+          '/guide/',
           {
             title: 'Core Concepts',
             collapsable: false,
             children: [
               '/guide/core-concepts/overview.md',
+              '/guide/core-concepts/the-core.md',
               '/guide/core-concepts/stores.md',
               '/guide/core-concepts/components.md',
               '/guide/core-concepts/strategies.md',
