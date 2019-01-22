@@ -1,19 +1,34 @@
 <template>
-  <form @submit.prevent="submit">
-    <p><strong>Status:</strong> {{status}}</p>
+  <auth-form method="forgotPassword" @success="$emit('success')">
+    <template slot-scope="{status, error, submit}">
 
-    <input type="text" name="email" v-model="email" placeholder="Email address" />
+      <form @submit.prevent="submit({email})">
+        <p><strong>Status:</strong> {{status}}</p>
 
-    <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+        <input type="text" name="email" v-model="email" placeholder="Email address" />
 
-    <input type="submit" value="Send Reset Email" />
-  </form>
+        <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+
+        <input type="submit" value="Send!" />
+      </form>
+
+    </template>
+  </auth-form>
+
 </template>
 
 <script>
-  import { ForgotPasswordFormMixin } from '@vue-accounts/core';
+  import { AuthForm } from '@vue-accounts/core';
 
   export default {
-    mixins: [ForgotPasswordFormMixin],
+    components: {
+      AuthForm,
+    },
+
+    data() {
+      return {
+        email: '',
+      };
+    },
   };
 </script>

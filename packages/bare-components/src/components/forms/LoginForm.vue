@@ -1,20 +1,36 @@
 <template>
-  <form @submit.prevent="submit">
-    <p><strong>Status:</strong> {{status}}</p>
+  <auth-form method="login">
+    <template slot-scope="{status, error, submit}">
 
-    <input type="text" name="email" v-model="email" placeholder="Email" />
-    <input type="password" name="password" v-model="password" placeholder="Password" />
+      <form @submit.prevent="submit({email, password})">
+        <p><strong>Status:</strong> {{status}}</p>
 
-    <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+        <input type="text" name="email" v-model="email" placeholder="Email" />
+        <input type="password" name="password" v-model="password" placeholder="Password" />
 
-    <input type="submit" value="Login" />
-  </form>
+        <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+
+        <input type="submit" value="Login" />
+      </form>
+
+    </template>
+  </auth-form>
+
 </template>
 
 <script>
-  import { LoginFormMixin } from '@vue-accounts/core';
+  import { AuthForm } from '@vue-accounts/core';
 
   export default {
-    mixins: [LoginFormMixin],
+    components: {
+      AuthForm,
+    },
+
+    data() {
+      return {
+        email: '',
+        password: '',
+      };
+    },
   };
 </script>

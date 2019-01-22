@@ -3,7 +3,7 @@ module.exports = {
     '/': {
       lang: 'en-US',
       title: 'Vue Accounts',
-      description: 'A Vue library to simplify the setup account systems',
+      description: 'A Vue library to simplify the setup of account systems',
     },
   },
   serviceWorker: true,

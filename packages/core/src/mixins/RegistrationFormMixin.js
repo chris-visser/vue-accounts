@@ -2,7 +2,7 @@ import BaseFormMixin from './BaseFormMixin';
 
 export default {
   extends: BaseFormMixin,
-  method: '$register',
+  method: 'register',
 
   data() {
     return {

@@ -46,7 +46,7 @@ export default {
      * @returns {Promise<void>}
      */
     async callMethod(payload) {
-      const method = this[this.$options.method];
+      const method = this.$accounts[this.$options.method];
 
       if (!method) {
         this.triggerError(`Method "${this.$options.method}" not implemented. Did you forget to add a vue-accounts plugin?`);

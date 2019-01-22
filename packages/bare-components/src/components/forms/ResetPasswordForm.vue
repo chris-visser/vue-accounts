@@ -1,23 +1,38 @@
 <template>
-  <form @submit.prevent="submit">
-    <p><strong>Status:</strong> {{status}}</p>
+  <auth-form method="resetPassword">
+    <template slot-scope="{status, error, submit}">
 
-    <p><strong>Token:</strong> {{token}}</p>
+      <form @submit.prevent="submit({token, password, repeatPassword})">
+        <p><strong>Status:</strong> {{status}}</p>
 
-    <input type="password" name="password" v-model="password" placeholder="Password" />
-    <input type="password" name="repeatPassword" v-model="repeatPassword" placeholder="Repeat Password" />
+        <p><strong>Token:</strong> {{token}}</p>
 
-    <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+        <input type="password" name="password" v-model="password" placeholder="Password" />
+        <input type="password" name="repeatPassword" v-model="repeatPassword" placeholder="Repeat Password" />
 
-    <input type="submit" value="Reset" />
-  </form>
+        <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+
+        <input type="submit" value="Reset" />
+      </form>
+
+    </template>
+  </auth-form>
 </template>
 
 <script>
-  import { ResetPasswordFormMixin } from '@vue-accounts/core';
+  import { AuthForm } from '@vue-accounts/core';
 
   export default {
-    mixins: [ResetPasswordFormMixin],
+    components: {
+      AuthForm,
+    },
+
+    data() {
+      return {
+        password: '',
+        repeatPassword: '',
+      };
+    },
 
     computed: {
       token() {

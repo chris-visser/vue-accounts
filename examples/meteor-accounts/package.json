@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "@vue-accounts/base-components": "0.0.0",
+    "@vue-accounts/bare-components": "0.0.0",
     "@vue-accounts/core": "0.0.0",
     "@vue-accounts/meteor-store": "0.0.0",
     "bcrypt": "^3.0.3",

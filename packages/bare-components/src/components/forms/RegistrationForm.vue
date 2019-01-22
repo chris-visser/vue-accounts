@@ -1,22 +1,39 @@
 <template>
-  <form @submit.prevent="submit">
-    <p><strong>Status:</strong> {{status}}</p>
+  <auth-form method="register">
+    <template slot-scope="{status, error, submit}">
 
-    <input type="text" name="email" v-model="email" placeholder="Email address" />
-    <input type="text" name="displayName" v-model="displayName" placeholder="Display name" />
-    <input type="password" name="password" v-model="password" placeholder="Password" />
-    <input type="password" name="repeatPassword" v-model="repeatPassword" placeholder="Repeat Password" />
+      <form @submit.prevent="submit({email, displayName, password, repeatPassword})">
+        <p><strong>Status:</strong> {{status}}</p>
 
-    <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+        <input type="text" name="email" v-model="email" placeholder="Email address" />
+        <input type="text" name="displayName" v-model="displayName" placeholder="Display name" />
+        <input type="password" name="password" v-model="password" placeholder="Password" />
+        <input type="password" name="repeatPassword" v-model="repeatPassword" placeholder="Repeat Password" />
 
-    <input type="submit" value="Register" />
-  </form>
+        <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+
+        <input type="submit" value="Register" />
+      </form>
+
+    </template>
+  </auth-form>
+
 </template>
 
 <script>
-  import { RegistrationFormMixin } from '@vue-accounts/core';
+  import { AuthForm } from '@vue-accounts/core';
 
   export default {
-    mixins: [RegistrationFormMixin],
+    components: {
+      AuthForm,
+    },
+    data() {
+      return {
+        displayName: '',
+        email: '',
+        password: '',
+        repeatPassword: '',
+      };
+    },
   };
 </script>

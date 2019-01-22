@@ -39,23 +39,15 @@ export default {
     };
 
     Object.defineProperties(Vue.prototype, {
-      $login: {
-        value: login,
-      },
-      $logout: {
-        value: logout,
-      },
-      $register: {
-        value: register,
-      },
-      $verifyEmail: {
-        value: verifyEmail,
-      },
-      $forgotPassword: {
-        value: forgotPassword,
-      },
-      $resetPassword: {
-        value: resetPassword,
+      $accounts: {
+        value: {
+          login,
+          logout,
+          register,
+          verifyEmail,
+          forgotPassword,
+          resetPassword,
+        },
       },
     });
   },
