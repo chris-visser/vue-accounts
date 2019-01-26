@@ -1,9 +1,10 @@
 # Overview
 
-A default setup consists of 1 core plugin, some kind of storage to hold the account 
-information of the logged in user. Components allow normal users to interact via the 
-core with the store. Essentially:
+Vue Accounts consists of a tiny, but extendable core. The core itself does not 
+contain any functionality, but does expose a global Vue object called `$accounts`. 
+So called [strategies](/guide/core-concepts/strategies) add methods to this `$accounts` object. 
 
---[Components]-----(method)-----[Core Plugin]-----(Dispatch action)-----[Store]--
+Each strategy method -
 
-> TODO: Create a very awesome picture instead of above draft..
+Strategies expose methods to components and connectors connect these methods to a client 
+state library like Vuex or Apollo. The core is just there to connect everything.

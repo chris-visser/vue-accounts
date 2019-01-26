@@ -9,7 +9,7 @@
     <div v-if="isLoggedIn">
       <img alt="Vue logo" src="../assets/logo.png">
       <h1>Welcome {{displayName}}</h1>
-      <button @click="$logout">Logout</button>
+      <button @click="$accounts.logout()">Logout</button>
     </div>
   </div>
 </template>

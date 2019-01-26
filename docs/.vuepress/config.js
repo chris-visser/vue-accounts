@@ -44,10 +44,9 @@ module.exports = {
             collapsable: false,
             children: [
               '/guide/core-concepts/overview.md',
-              '/guide/core-concepts/the-core.md',
-              '/guide/core-concepts/stores.md',
-              '/guide/core-concepts/components.md',
               '/guide/core-concepts/strategies.md',
+              '/guide/core-concepts/connectors.md',
+              '/guide/core-concepts/components.md',
             ],
           },
           {

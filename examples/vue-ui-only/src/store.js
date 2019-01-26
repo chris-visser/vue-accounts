@@ -42,7 +42,7 @@ const store = new Vuex.Store({
   actions: {
     login({ commit }, { email, password }) {
       if (!password) {
-        throw 'Password is required';
+        return Promise.reject('Password is required');
       }
 
       const account = this.state._accounts.find((user) => user.email === email && user.password === password);
@@ -111,7 +111,5 @@ const store = new Vuex.Store({
     },
   },
 });
-
-Vue.use(AccountStorePlugin, { store });
 
 export default store;

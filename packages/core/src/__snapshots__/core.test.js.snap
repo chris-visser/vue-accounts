@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should throw when no connector is specified 1`] = `"A store connector is required"`;
+
+exports[`It should throw when the connector does not have a dispatch function 1`] = `"Your connector must at least have a dispatch method"`;
+
+exports[`It should throw when the connector is not an object 1`] = `"Your connector must be an object with a dispatch method. string given"`;

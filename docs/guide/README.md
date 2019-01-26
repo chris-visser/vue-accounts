@@ -1,36 +1,46 @@
 # Getting started
 
-Install the dependencies:
+## Installation 
 
 ```bash
 npm install @vue-accounts/core
 ```
 
-Add the store plugin to use the components with your Vuex account store
+Choose a store connector and a strategy. The below example uses Vuex with the password strategy:
+
 ```javascript
 import Vuex from 'vuex';
-import { AccountStorePlugin } from '@vue-accounts/core';
+import AccountsCore, { PasswordStrategy, VuexConnector } from '@vue-accounts/core';
 
 Vue.use(Vuex);
 
-const store = new Vue.Store({});
+const store = new Vue.Store({}); // Init a regular VueX Store
 
-Vue.use(AccountStorePlugin, { store }); // Init the plugin with the Vuex store
+const StoreConnector = VuexConnector(store); // Init the connector with the store
+
+// Init the AccountsCore plugin with the connector and one or more strategies
+const Accounts = new AccountsCore(StoreConnector, [
+  PasswordStrategy(),
+]);
+
+Vue.use(Accounts); // Add it to Vue and you're set!
 ```
 
-The above store plugin will expose global account methods that you can call from anywhere in your app. 
+Now the only thing for you left todo is to either add or build your own components.
 
 ## Adding Components
-You can use component libraries to provide the forms and other account 
-components or [build your own components](/guide/core-concepts/components.html#creating-your-own-components)!
+Ofcourse we need components like forms for login, register, etc and buttons to logout.
+
+
+Vue Accounts comes with pre-made component libraries for many of the common libraries like 
+Vuetify, Buefy, Bootstrap Vue and Element, but its also pretty simple to build your own. 
+In our case we are going to use bare-components since that one has no dependencies:
 
 ```bash
 npm install @vue-accounts/bare-components
 ```
 
-The above example provides a couple of forms without any styling that 
-fit gracefully on the global account methods. You can now add for example 
-a fully functional login form:
+You only need to add one of the components into your page to make it work:
 
 ```vue
 <template>
@@ -54,12 +64,12 @@ Below is a list of libraries that provide pre-made component libraries that work
 - **@vue-accounts/bare-components**: (Coming soon) Pre-made account components without any styling applied
 - **@vue-accounts/bootstrap-components**: (Coming soon) Pre-made Bootstrap account components
 - [@vue-accounts/vuetify-components](https://github.com/chris-visser/vue-accounts-vuetify): Pre-made Vuetify account components
+- **@vue-accounts/element-components** (Coming Soon)
+- **@vue-accounts/buefy-components** (Coming Soon)
 
-## Adding a store module
-Though the store plugin provides the global methods, the methods don't do anything 'yet'. 
-for this to work you either download an existing module or you create your own.
-
-Here's an example using the Meteor accounts system:
+## Adding a store
+The VueX store connector dispatches actions on your store, but there is no store module listening to them.
+We either need to create our own or we use a pre-made store module. Lets use the Meteor store:
 
 ```bash
 npm install @vue-accounts/meteor-store

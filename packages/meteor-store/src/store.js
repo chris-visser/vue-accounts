@@ -5,7 +5,7 @@ const { Accounts } = getMeteorClientPackage('accounts-base');
 
 export default {
   state: {
-    userId: null, // On initial load the userId will come from Meteor
+    userId: null, // On initial load the userId will come from Meteor.userId()
     email: null,
     isEmailVerified: null,
     profile: null,
@@ -28,9 +28,9 @@ export default {
 
       // In Meteor the Meteor.userId() can be set while Meteor.user() is still empty
       // This is because the Meteor.userId() comes from the session cookie and Meteor.user()
-      // gets its data from a publication. Each new login of page refresh, the client will
+      // gets its data from a publication. Each new login or page refresh, the client will
       // subscribe to the server and during that time Meteor.user() will be empty
-      // The userDetailsLoaded will mark that Meteor.user() is filled on 'true'
+      // The userDetailsLoaded will be set to true when Meteor.user() is filled for the first time
       if (!state.userDetailsLoaded) {
         state.userDetailsLoaded = true;
       }
