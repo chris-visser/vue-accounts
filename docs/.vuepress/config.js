@@ -46,7 +46,7 @@ module.exports = {
               '/guide/core-concepts/overview.md',
               '/guide/core-concepts/strategies.md',
               '/guide/core-concepts/connectors.md',
-              '/guide/core-concepts/components.md',
+              '/guide/core-concepts/stores.md',
             ],
           },
           {

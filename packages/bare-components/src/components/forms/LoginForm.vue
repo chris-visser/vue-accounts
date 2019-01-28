@@ -15,17 +15,10 @@
 
     </template>
   </auth-form>
-
 </template>
 
 <script>
-  import { AuthForm } from '@vue-accounts/core';
-
   export default {
-    components: {
-      AuthForm,
-    },
-
     data() {
       return {
         email: '',

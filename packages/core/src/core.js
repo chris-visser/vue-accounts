@@ -19,8 +19,8 @@ export default class AccountsCore {
       throw new Error(`Your connector must be an object with a dispatch method. ${typeof connector} given`);
     }
 
-    if (!connector.dispatch) {
-      throw new Error('Your connector must at least have a dispatch method');
+    if (!connector.action) {
+      throw new Error('Your connector must at least have a action method');
     }
 
     this.connector = connector;
@@ -67,6 +67,6 @@ export default class AccountsCore {
    * @param payload
    */
   dispatch(method, payload) {
-    return this.connector.dispatch(method, payload);
+    return this.connector.action(method, payload);
   }
 }

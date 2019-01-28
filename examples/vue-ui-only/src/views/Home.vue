@@ -15,20 +15,20 @@
 </template>
 
 <script>
-  import { LoginForm } from '@vue-accounts/bare-components';
+import { LoginForm } from '@vue-accounts/bare-components';
 
-  export default {
-    name: 'home',
-    components: {
-      LoginForm,
+export default {
+  name: 'home',
+  components: {
+    LoginForm,
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.state.isLoggedIn;
     },
-    computed: {
-      isLoggedIn() {
-        return this.$store.state.isLoggedIn;
-      },
-      displayName() {
-        return this.$store.state.account.displayName;
-      },
+    displayName() {
+      return this.$store.state.account.displayName;
     },
-  };
+  },
+};
 </script>
