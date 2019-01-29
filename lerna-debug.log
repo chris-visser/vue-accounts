@@ -5,16 +5,16 @@
 0 silly argv   '$0': '/home/cloudspider/Server/open-source/vue-accounts/node_modules/.bin/lerna' }
 1 notice cli v3.10.5
 2 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-3 verbose session ab6650fcebe0e5af
+3 verbose session cdb497642b79eb0a
 4 verbose user-agent lerna/3.10.5/node@v8.14.0+x64 (linux)
-5 verbose git-describe undefined => "v0.0.3-alpha.0-1-g09b464d"
-6 silly git-describe parsed => {"lastTagName":"v0.0.3-alpha.0","lastVersion":"v0.0.3-alpha.0","refCount":"1","sha":"09b464d","isDirty":false}
+5 verbose git-describe undefined => "v0.0.4-alpha.0-1-g779a73a"
+6 silly git-describe parsed => {"lastTagName":"v0.0.4-alpha.0","lastVersion":"v0.0.4-alpha.0","refCount":"1","sha":"779a73a","isDirty":false}
 7 silly argv { _: [ 'publish' ],
 7 silly argv   composed: 'publish',
 7 silly argv   '--': [ '--access', 'public' ],
 7 silly argv   lernaVersion: '3.10.5' }
 8 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-9 info current version 0.0.3-alpha.0
+9 info current version 0.0.4-alpha.0
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly currentBranch
@@ -24,27 +24,27 @@
 16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.3-alpha.0-1-g09b464d" => {"lastTagName":"v0.0.3-alpha.0","lastVersion":"v0.0.3-alpha.0","refCount":"1","sha":"09b464d","isDirty":false}
-20 info Looking for changed packages since v0.0.3-alpha.0
-21 silly diffSinceIn v0.0.3-alpha.0 examples/meteor-accounts
+19 silly git-describe.sync "v0.0.4-alpha.0-1-g779a73a" => {"lastTagName":"v0.0.4-alpha.0","lastVersion":"v0.0.4-alpha.0","refCount":"1","sha":"779a73a","isDirty":false}
+20 info Looking for changed packages since v0.0.4-alpha.0
+21 silly diffSinceIn v0.0.4-alpha.0 examples/meteor-accounts
 22 silly diff
-23 silly diffSinceIn v0.0.3-alpha.0 examples/vue-ui-only
+23 silly diffSinceIn v0.0.4-alpha.0 examples/vue-ui-only
 24 silly diff
-25 silly diffSinceIn v0.0.3-alpha.0 packages/bare-components
+25 silly diffSinceIn v0.0.4-alpha.0 packages/bare-components
 26 silly diff packages/bare-components/package.json
-27 silly diffSinceIn v0.0.3-alpha.0 packages/core
+27 silly diffSinceIn v0.0.4-alpha.0 packages/core
 28 silly diff packages/core/package.json
-29 silly diffSinceIn v0.0.3-alpha.0 packages/meteor-store
+29 silly diffSinceIn v0.0.4-alpha.0 packages/meteor-store
 30 silly diff packages/meteor-store/package.json
-31 silly diffSinceIn v0.0.3-alpha.0 packages/vuetify-components
+31 silly diffSinceIn v0.0.4-alpha.0 packages/vuetify-components
 32 silly diff packages/vuetify-components/package.json
 33 verbose updated vue-ui-only
 34 verbose updated @vue-accounts/bare-components
 35 verbose updated @vue-accounts/core
 36 verbose updated @vue-accounts/meteor-store
 37 verbose updated @vue-accounts/vuetify-components
-38 verbose git-describe undefined => "v0.0.3-alpha.0-1-g09b464d"
-39 silly git-describe parsed => {"lastTagName":"v0.0.3-alpha.0","lastVersion":"v0.0.3-alpha.0","refCount":"1","sha":"09b464d","isDirty":false}
+38 verbose git-describe undefined => "v0.0.4-alpha.0-1-g779a73a"
+39 silly git-describe parsed => {"lastTagName":"v0.0.4-alpha.0","lastVersion":"v0.0.4-alpha.0","refCount":"1","sha":"779a73a","isDirty":false}
 40 silly batched [ PackageGraphNode {
 40 silly batched     name: '@vue-accounts/core',
 40 silly batched     externalDependencies:
@@ -156,24 +156,24 @@
 44 silly lifecycle No script for "preversion" in "@vue-accounts/core", continuing
 45 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-store", continuing
 46 silly lifecycle No script for "preversion" in "@vue-accounts/vuetify-components", continuing
-47 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
-48 silly lifecycle No script for "version" in "@vue-accounts/vuetify-components", continuing
+47 silly lifecycle No script for "version" in "@vue-accounts/vuetify-components", continuing
+48 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
 49 silly lifecycle No script for "version" in "@vue-accounts/meteor-store", continuing
 50 silly lifecycle No script for "preversion" in "@vue-accounts/bare-components", continuing
 51 silly lifecycle No script for "version" in "@vue-accounts/bare-components", continuing
 52 silly lifecycle No script for "preversion" in "vue-ui-only", continuing
 53 silly lifecycle No script for "version" in "vue-ui-only", continuing
 54 silly lifecycle No script for "version" in "vue-accounts", continuing
-55 silly gitAdd [ '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/vuetify-components/package.json',
+55 silly gitAdd [ '/home/cloudspider/Server/open-source/vue-accounts/packages/vuetify-components/package.json',
+55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
 55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/meteor-store/package.json',
 55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/bare-components/package.json',
 55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/vue-ui-only/package.json',
 55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/lerna.json' ]
-56 silly gitCommit v0.0.4-alpha.0
-57 verbose git [ 'commit', '-m', 'v0.0.4-alpha.0' ]
-58 silly gitTag v0.0.4-alpha.0
-59 verbose git [ 'tag', 'v0.0.4-alpha.0', '-m', 'v0.0.4-alpha.0' ]
+56 silly gitCommit v0.0.5-alpha.0
+57 verbose git [ 'commit', '-m', 'v0.0.5-alpha.0' ]
+58 silly gitTag v0.0.5-alpha.0
+59 verbose git [ 'tag', 'v0.0.5-alpha.0', '-m', 'v0.0.5-alpha.0' ]
 60 silly lifecycle No script for "postversion" in "vue-ui-only", continuing
 61 silly lifecycle No script for "postversion" in "@vue-accounts/bare-components", continuing
 62 silly lifecycle No script for "postversion" in "@vue-accounts/core", continuing
@@ -208,13 +208,13 @@
 70 info publish Publishing packages to npm...
 71 info Verifying npm credentials
 72 verbose Retrieving npm user profile
-73 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 835ms
+73 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1249ms
 74 silly npm profile get received {"tfa":false,"name":"cloudspider","email":"redroest@hotmail.com","email_verified":true,"created":"2015-06-29T12:21:44.433Z","updated":"2018-01-21T20:14:46.485Z","cidr_whitelist":null,"fullname":"Chris","homepage":"","twitter":"","github":""}
 75 silly npm whoami received {"username":"cloudspider"}
 76 silly verifyNpmPackageAccess
-77 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 277ms
+77 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 797ms
 78 silly getCurrentSHA
-79 verbose getCurrentSHA f89839a62ba67f21297a8a4389c0eb3f4a45f9d8
+79 verbose getCurrentSHA 9e470f0c4193765ba4a748d7dc0b9b4d6cd9629b
 80 warn lifecycle Skipping root "prepublish" because it has already been called
 81 silly lifecycle No script for "prepare" in "vue-accounts", continuing
 82 silly lifecycle No script for "prepublishOnly" in "vue-accounts", continuing
@@ -251,7 +251,7 @@
 113 verbose publish @vue-accounts/core
 114 verbose publish @vue-accounts/meteor-store
 115 verbose publish @vue-accounts/vuetify-components
-116 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fmeteor-store 553ms
-117 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@vue-accounts%2fmeteor-store - You must sign up for private packages
+116 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fvuetify-components 815ms
+117 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@vue-accounts%2fvuetify-components - You must sign up for private packages
 117 error     at res.buffer.catch.then.body (/home/cloudspider/Server/open-source/vue-accounts/node_modules/npm-registry-fetch/check-response.js:104:15)
 117 error     at <anonymous>
