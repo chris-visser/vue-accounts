@@ -8,7 +8,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish --access public",
+    "publish": "lerna publish -- --access public",
     "link": "lerna link"
   },
   "devDependencies": {
