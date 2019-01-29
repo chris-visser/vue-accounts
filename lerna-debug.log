@@ -5,122 +5,112 @@
 0 silly argv   '$0': '/home/cloudspider/Server/open-source/vue-accounts/node_modules/.bin/lerna' }
 1 notice cli v3.10.5
 2 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-3 verbose session c8142d9b8f82a906
+3 verbose session d2793be7d37d189e
 4 verbose user-agent lerna/3.10.5/node@v8.14.0+x64 (linux)
-5 verbose git-describe undefined => "v0.0.5-alpha.0-1-g0dc4e76"
-6 silly git-describe parsed => {"lastTagName":"v0.0.5-alpha.0","lastVersion":"v0.0.5-alpha.0","refCount":"1","sha":"0dc4e76","isDirty":false}
+5 verbose git-describe undefined => "v0.0.6-alpha.0-2-ge03716d"
+6 silly git-describe parsed => {"lastTagName":"v0.0.6-alpha.0","lastVersion":"v0.0.6-alpha.0","refCount":"2","sha":"e03716d","isDirty":false}
 7 silly argv { _: [ 'publish' ],
 7 silly argv   composed: 'publish',
 7 silly argv   '--': [ '--access', 'public' ],
 7 silly argv   lernaVersion: '3.10.5' }
 8 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-9 info current version 0.0.5-alpha.0
+9 info current version 0.0.6-alpha.0
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly currentBranch
 13 verbose currentBranch master
 14 silly remoteBranchExists
 15 silly isBehindUpstream
-16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
+16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.5-alpha.0-1-g0dc4e76" => {"lastTagName":"v0.0.5-alpha.0","lastVersion":"v0.0.5-alpha.0","refCount":"1","sha":"0dc4e76","isDirty":false}
-20 info Looking for changed packages since v0.0.5-alpha.0
-21 silly diffSinceIn v0.0.5-alpha.0 examples/meteor-accounts
-22 silly diff
-23 silly diffSinceIn v0.0.5-alpha.0 examples/vue-ui-only
-24 silly diff
-25 silly diffSinceIn v0.0.5-alpha.0 packages/bare-components
+19 silly git-describe.sync "v0.0.6-alpha.0-2-ge03716d" => {"lastTagName":"v0.0.6-alpha.0","lastVersion":"v0.0.6-alpha.0","refCount":"2","sha":"e03716d","isDirty":false}
+20 info Looking for changed packages since v0.0.6-alpha.0
+21 silly diffSinceIn v0.0.6-alpha.0 examples/meteor-accounts
+22 silly diff examples/meteor-accounts/package.json
+23 silly diffSinceIn v0.0.6-alpha.0 examples/vue-ui-only
+24 silly diff examples/vue-ui-only/package.json
+25 silly diffSinceIn v0.0.6-alpha.0 packages/bare-components
 26 silly diff packages/bare-components/package.json
-27 silly diffSinceIn v0.0.5-alpha.0 packages/core
-28 silly diff packages/core/LICENSE
-28 silly diff packages/core/README.md
+27 silly diffSinceIn v0.0.6-alpha.0 packages/core
 28 silly diff packages/core/package.json
-29 silly diffSinceIn v0.0.5-alpha.0 packages/meteor-store
+29 silly diffSinceIn v0.0.6-alpha.0 packages/meteor-store
 30 silly diff packages/meteor-store/package.json
-31 silly diffSinceIn v0.0.5-alpha.0 packages/vuetify-components
-32 silly diff packages/vuetify-components/LICENSE
+31 silly diffSinceIn v0.0.6-alpha.0 packages/vuetify-components
 32 silly diff packages/vuetify-components/package.json
-33 verbose updated vue-ui-only
-34 verbose updated @vue-accounts/bare-components
-35 verbose updated @vue-accounts/core
-36 verbose updated @vue-accounts/meteor-store
-37 verbose updated @vue-accounts/vuetify-components
-38 verbose git-describe undefined => "v0.0.5-alpha.0-1-g0dc4e76"
-39 silly git-describe parsed => {"lastTagName":"v0.0.5-alpha.0","lastVersion":"v0.0.5-alpha.0","refCount":"1","sha":"0dc4e76","isDirty":false}
-40 silly batched [ PackageGraphNode {
-40 silly batched     name: '@vue-accounts/core',
-40 silly batched     externalDependencies:
-40 silly batched      Map {
-40 silly batched        '@babel/core' => [Object],
-40 silly batched        '@babel/preset-env' => [Object],
-40 silly batched        'cross-env' => [Object],
-40 silly batched        'jest' => [Object],
-40 silly batched        'minimist' => [Object],
-40 silly batched        'rollup' => [Object],
-40 silly batched        'rollup-plugin-babel' => [Object],
-40 silly batched        'rollup-plugin-buble' => [Object],
-40 silly batched        'rollup-plugin-node-resolve' => [Object],
-40 silly batched        'rollup-plugin-nodent' => [Object],
-40 silly batched        'rollup-plugin-replace' => [Object],
-40 silly batched        'rollup-plugin-uglify-es' => [Object],
-40 silly batched        'rollup-plugin-vue' => [Object],
-40 silly batched        'vue' => [Object],
-40 silly batched        'vue-router' => [Object],
-40 silly batched        'vue-template-compiler' => [Object],
-40 silly batched        'vuex' => [Object],
-40 silly batched        'babel-jest' => [Object] },
-40 silly batched     localDependencies: Map {},
-40 silly batched     localDependents:
-40 silly batched      Map {
-40 silly batched        'vue-ui-only' => [Object],
-40 silly batched        '@vue-accounts/bare-components' => [Object] } },
-40 silly batched   PackageGraphNode {
-40 silly batched     name: '@vue-accounts/meteor-store',
-40 silly batched     externalDependencies:
-40 silly batched      Map {
-40 silly batched        'cross-env' => [Object],
-40 silly batched        'minimist' => [Object],
-40 silly batched        'rollup' => [Object],
-40 silly batched        'rollup-plugin-buble' => [Object],
-40 silly batched        'rollup-plugin-node-resolve' => [Object],
-40 silly batched        'rollup-plugin-nodent' => [Object],
-40 silly batched        'rollup-plugin-replace' => [Object],
-40 silly batched        'rollup-plugin-uglify-es' => [Object],
-40 silly batched        'rollup-plugin-vue' => [Object],
-40 silly batched        'vue' => [Object],
-40 silly batched        'vue-router' => [Object],
-40 silly batched        'vue-template-compiler' => [Object],
-40 silly batched        'vuepress' => [Object],
-40 silly batched        'vuex' => [Object],
-40 silly batched        'meteor-node-stubs' => [Object],
-40 silly batched        'meteor-package' => [Object] },
-40 silly batched     localDependencies: Map {},
-40 silly batched     localDependents: Map {} },
-40 silly batched   PackageGraphNode {
-40 silly batched     name: '@vue-accounts/vuetify-components',
-40 silly batched     externalDependencies:
-40 silly batched      Map {
-40 silly batched        'cross-env' => [Object],
-40 silly batched        'minimist' => [Object],
-40 silly batched        'rollup' => [Object],
-40 silly batched        'rollup-plugin-babel' => [Object],
-40 silly batched        'rollup-plugin-buble' => [Object],
-40 silly batched        'rollup-plugin-node-resolve' => [Object],
-40 silly batched        'rollup-plugin-nodent' => [Object],
-40 silly batched        'rollup-plugin-replace' => [Object],
-40 silly batched        'rollup-plugin-uglify-es' => [Object],
-40 silly batched        'rollup-plugin-vue' => [Object],
-40 silly batched        'vee-validate' => [Object],
-40 silly batched        'vue' => [Object],
-40 silly batched        'vue-router' => [Object],
-40 silly batched        'vue-template-compiler' => [Object],
-40 silly batched        'vuetify' => [Object],
-40 silly batched        'vuex' => [Object] },
-40 silly batched     localDependencies: Map {},
-40 silly batched     localDependents: Map {} } ]
+33 verbose updated @vue-accounts/meteor-example
+34 verbose updated @vue-accounts/ui-only-example
+35 verbose updated @vue-accounts/bare-components
+36 verbose updated @vue-accounts/core
+37 verbose updated @vue-accounts/meteor-store
+38 verbose updated @vue-accounts/vuetify-components
+39 verbose git-describe undefined => "v0.0.6-alpha.0-2-ge03716d"
+40 silly git-describe parsed => {"lastTagName":"v0.0.6-alpha.0","lastVersion":"v0.0.6-alpha.0","refCount":"2","sha":"e03716d","isDirty":false}
 41 silly batched [ PackageGraphNode {
-41 silly batched     name: '@vue-accounts/bare-components',
+41 silly batched     name: '@vue-accounts/meteor-example',
+41 silly batched     externalDependencies:
+41 silly batched      Map {
+41 silly batched        '@babel/runtime' => [Object],
+41 silly batched        '@vue-accounts/bare-components' => [Object],
+41 silly batched        '@vue-accounts/core' => [Object],
+41 silly batched        '@vue-accounts/meteor-store' => [Object],
+41 silly batched        'bcrypt' => [Object],
+41 silly batched        'meteor-node-stubs' => [Object],
+41 silly batched        'vue' => [Object],
+41 silly batched        'vuex' => [Object] },
+41 silly batched     localDependencies: Map {},
+41 silly batched     localDependents: Map {} },
+41 silly batched   PackageGraphNode {
+41 silly batched     name: '@vue-accounts/core',
+41 silly batched     externalDependencies:
+41 silly batched      Map {
+41 silly batched        '@babel/core' => [Object],
+41 silly batched        '@babel/preset-env' => [Object],
+41 silly batched        'cross-env' => [Object],
+41 silly batched        'jest' => [Object],
+41 silly batched        'minimist' => [Object],
+41 silly batched        'rollup' => [Object],
+41 silly batched        'rollup-plugin-babel' => [Object],
+41 silly batched        'rollup-plugin-buble' => [Object],
+41 silly batched        'rollup-plugin-node-resolve' => [Object],
+41 silly batched        'rollup-plugin-nodent' => [Object],
+41 silly batched        'rollup-plugin-replace' => [Object],
+41 silly batched        'rollup-plugin-uglify-es' => [Object],
+41 silly batched        'rollup-plugin-vue' => [Object],
+41 silly batched        'vue' => [Object],
+41 silly batched        'vue-router' => [Object],
+41 silly batched        'vue-template-compiler' => [Object],
+41 silly batched        'vuex' => [Object],
+41 silly batched        'babel-jest' => [Object] },
+41 silly batched     localDependencies: Map {},
+41 silly batched     localDependents:
+41 silly batched      Map {
+41 silly batched        '@vue-accounts/ui-only-example' => [Object],
+41 silly batched        '@vue-accounts/bare-components' => [Object] } },
+41 silly batched   PackageGraphNode {
+41 silly batched     name: '@vue-accounts/meteor-store',
+41 silly batched     externalDependencies:
+41 silly batched      Map {
+41 silly batched        'cross-env' => [Object],
+41 silly batched        'minimist' => [Object],
+41 silly batched        'rollup' => [Object],
+41 silly batched        'rollup-plugin-buble' => [Object],
+41 silly batched        'rollup-plugin-node-resolve' => [Object],
+41 silly batched        'rollup-plugin-nodent' => [Object],
+41 silly batched        'rollup-plugin-replace' => [Object],
+41 silly batched        'rollup-plugin-uglify-es' => [Object],
+41 silly batched        'rollup-plugin-vue' => [Object],
+41 silly batched        'vue' => [Object],
+41 silly batched        'vue-router' => [Object],
+41 silly batched        'vue-template-compiler' => [Object],
+41 silly batched        'vuepress' => [Object],
+41 silly batched        'vuex' => [Object],
+41 silly batched        'meteor-node-stubs' => [Object],
+41 silly batched        'meteor-package' => [Object] },
+41 silly batched     localDependencies: Map {},
+41 silly batched     localDependents: Map {} },
+41 silly batched   PackageGraphNode {
+41 silly batched     name: '@vue-accounts/vuetify-components',
 41 silly batched     externalDependencies:
 41 silly batched      Map {
 41 silly batched        'cross-env' => [Object],
@@ -133,128 +123,154 @@
 41 silly batched        'rollup-plugin-replace' => [Object],
 41 silly batched        'rollup-plugin-uglify-es' => [Object],
 41 silly batched        'rollup-plugin-vue' => [Object],
+41 silly batched        'vee-validate' => [Object],
 41 silly batched        'vue' => [Object],
-41 silly batched        'vue-template-compiler' => [Object] },
+41 silly batched        'vue-router' => [Object],
+41 silly batched        'vue-template-compiler' => [Object],
+41 silly batched        'vuetify' => [Object],
+41 silly batched        'vuex' => [Object] },
 41 silly batched     localDependencies: Map {},
-41 silly batched     localDependents: Map { 'vue-ui-only' => [Object] } } ]
+41 silly batched     localDependents: Map {} } ]
 42 silly batched [ PackageGraphNode {
-42 silly batched     name: 'vue-ui-only',
+42 silly batched     name: '@vue-accounts/bare-components',
 42 silly batched     externalDependencies:
 42 silly batched      Map {
-42 silly batched        '@vue/cli-plugin-babel' => [Object],
-42 silly batched        '@vue/cli-plugin-eslint' => [Object],
-42 silly batched        '@vue/cli-service' => [Object],
-42 silly batched        '@vue/eslint-config-airbnb' => [Object],
-42 silly batched        'babel-eslint' => [Object],
-42 silly batched        'eslint' => [Object],
-42 silly batched        'eslint-plugin-vue' => [Object],
-42 silly batched        'vue-template-compiler' => [Object],
-42 silly batched        '@vue/cli' => [Object],
+42 silly batched        'cross-env' => [Object],
+42 silly batched        'minimist' => [Object],
+42 silly batched        'rollup' => [Object],
+42 silly batched        'rollup-plugin-babel' => [Object],
+42 silly batched        'rollup-plugin-buble' => [Object],
+42 silly batched        'rollup-plugin-node-resolve' => [Object],
+42 silly batched        'rollup-plugin-nodent' => [Object],
+42 silly batched        'rollup-plugin-replace' => [Object],
+42 silly batched        'rollup-plugin-uglify-es' => [Object],
+42 silly batched        'rollup-plugin-vue' => [Object],
 42 silly batched        'vue' => [Object],
-42 silly batched        'vue-router' => [Object],
-42 silly batched        'vuex' => [Object] },
+42 silly batched        'vue-template-compiler' => [Object] },
 42 silly batched     localDependencies: Map {},
-42 silly batched     localDependents: Map {} } ]
-43 silly lifecycle No script for "preversion" in "vue-accounts", continuing
-44 silly lifecycle No script for "preversion" in "@vue-accounts/core", continuing
-45 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-store", continuing
-46 silly lifecycle No script for "preversion" in "@vue-accounts/vuetify-components", continuing
-47 silly lifecycle No script for "version" in "@vue-accounts/meteor-store", continuing
-48 silly lifecycle No script for "version" in "@vue-accounts/vuetify-components", continuing
-49 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
-50 silly lifecycle No script for "preversion" in "@vue-accounts/bare-components", continuing
-51 silly lifecycle No script for "version" in "@vue-accounts/bare-components", continuing
-52 silly lifecycle No script for "preversion" in "vue-ui-only", continuing
-53 silly lifecycle No script for "version" in "vue-ui-only", continuing
-54 silly lifecycle No script for "version" in "vue-accounts", continuing
-55 silly gitAdd [ '/home/cloudspider/Server/open-source/vue-accounts/packages/meteor-store/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/vuetify-components/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/bare-components/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/vue-ui-only/package.json',
-55 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/lerna.json' ]
-56 silly gitCommit v0.0.6-alpha.0
-57 verbose git [ 'commit', '-m', 'v0.0.6-alpha.0' ]
-58 silly gitTag v0.0.6-alpha.0
-59 verbose git [ 'tag', 'v0.0.6-alpha.0', '-m', 'v0.0.6-alpha.0' ]
-60 silly lifecycle No script for "postversion" in "vue-ui-only", continuing
-61 silly lifecycle No script for "postversion" in "@vue-accounts/bare-components", continuing
-62 silly lifecycle No script for "postversion" in "@vue-accounts/core", continuing
-63 silly lifecycle No script for "postversion" in "@vue-accounts/meteor-store", continuing
-64 silly lifecycle No script for "postversion" in "@vue-accounts/vuetify-components", continuing
-65 silly lifecycle No script for "postversion" in "vue-accounts", continuing
-66 info git Pushing tags...
-67 silly gitPush origin master
-68 silly batched [ PackageGraphNode {
-68 silly batched     name: '@vue-accounts/core',
-68 silly batched     externalDependencies: Map { 'babel-jest' => [Object] },
-68 silly batched     localDependencies: Map {},
-68 silly batched     localDependents: Map { '@vue-accounts/bare-components' => [Object] } },
-68 silly batched   PackageGraphNode {
-68 silly batched     name: '@vue-accounts/meteor-store',
-68 silly batched     externalDependencies:
-68 silly batched      Map {
-68 silly batched        'meteor-node-stubs' => [Object],
-68 silly batched        'meteor-package' => [Object] },
-68 silly batched     localDependencies: Map {},
-68 silly batched     localDependents: Map {} },
-68 silly batched   PackageGraphNode {
-68 silly batched     name: '@vue-accounts/vuetify-components',
-68 silly batched     externalDependencies: Map {},
-68 silly batched     localDependencies: Map {},
-68 silly batched     localDependents: Map {} } ]
-69 silly batched [ PackageGraphNode {
-69 silly batched     name: '@vue-accounts/bare-components',
-69 silly batched     externalDependencies: Map {},
-69 silly batched     localDependencies: Map {},
-69 silly batched     localDependents: Map {} } ]
-70 info publish Publishing packages to npm...
-71 info Verifying npm credentials
-72 verbose Retrieving npm user profile
-73 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 427ms
-74 silly npm profile get received {"tfa":false,"name":"cloudspider","email":"redroest@hotmail.com","email_verified":true,"created":"2015-06-29T12:21:44.433Z","updated":"2018-01-21T20:14:46.485Z","cidr_whitelist":null,"fullname":"Chris","homepage":"","twitter":"","github":""}
-75 silly npm whoami received {"username":"cloudspider"}
-76 silly verifyNpmPackageAccess
-77 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 267ms
-78 silly getCurrentSHA
-79 verbose getCurrentSHA 69b78bdc483fcee397235d2c307387552f538f4d
-80 warn lifecycle Skipping root "prepublish" because it has already been called
-81 silly lifecycle No script for "prepare" in "vue-accounts", continuing
-82 silly lifecycle No script for "prepublishOnly" in "vue-accounts", continuing
-83 silly lifecycle No script for "prepack" in "vue-accounts", continuing
-84 verbose pack-directory packages/core
-85 verbose pack-directory packages/meteor-store
-86 verbose pack-directory packages/vuetify-components
-87 silly lifecycle No script for "prepublish" in "@vue-accounts/core", continuing
-88 silly lifecycle No script for "prepublish" in "@vue-accounts/meteor-store", continuing
-89 silly lifecycle No script for "prepublish" in "@vue-accounts/vuetify-components", continuing
-90 silly lifecycle No script for "prepare" in "@vue-accounts/core", continuing
-91 silly lifecycle No script for "prepare" in "@vue-accounts/meteor-store", continuing
-92 silly lifecycle No script for "prepare" in "@vue-accounts/vuetify-components", continuing
-93 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/meteor-store", continuing
-94 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/vuetify-components", continuing
-95 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/core", continuing
-96 silly lifecycle No script for "prepack" in "@vue-accounts/meteor-store", continuing
-97 silly lifecycle No script for "prepack" in "@vue-accounts/vuetify-components", continuing
-98 silly lifecycle No script for "prepack" in "@vue-accounts/core", continuing
-99 silly lifecycle No script for "postpack" in "@vue-accounts/meteor-store", continuing
-100 verbose packed @vue-accounts/meteor-store packages/meteor-store
-101 silly lifecycle No script for "postpack" in "@vue-accounts/core", continuing
-102 verbose packed @vue-accounts/core packages/core
-103 silly lifecycle No script for "postpack" in "@vue-accounts/vuetify-components", continuing
-104 verbose packed @vue-accounts/vuetify-components packages/vuetify-components
-105 verbose pack-directory packages/bare-components
-106 silly lifecycle No script for "prepublish" in "@vue-accounts/bare-components", continuing
-107 silly lifecycle No script for "prepare" in "@vue-accounts/bare-components", continuing
-108 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/bare-components", continuing
-109 silly lifecycle No script for "prepack" in "@vue-accounts/bare-components", continuing
-110 silly lifecycle No script for "postpack" in "@vue-accounts/bare-components", continuing
-111 verbose packed @vue-accounts/bare-components packages/bare-components
-112 silly lifecycle No script for "postpack" in "vue-accounts", continuing
-113 verbose publish @vue-accounts/core
-114 verbose publish @vue-accounts/meteor-store
-115 verbose publish @vue-accounts/vuetify-components
-116 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fmeteor-store 340ms
-117 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@vue-accounts%2fmeteor-store - You must sign up for private packages
-117 error     at res.buffer.catch.then.body (/home/cloudspider/Server/open-source/vue-accounts/node_modules/npm-registry-fetch/check-response.js:104:15)
-117 error     at <anonymous>
+42 silly batched     localDependents: Map { '@vue-accounts/ui-only-example' => [Object] } } ]
+43 silly batched [ PackageGraphNode {
+43 silly batched     name: '@vue-accounts/ui-only-example',
+43 silly batched     externalDependencies:
+43 silly batched      Map {
+43 silly batched        '@vue/cli-plugin-babel' => [Object],
+43 silly batched        '@vue/cli-plugin-eslint' => [Object],
+43 silly batched        '@vue/cli-service' => [Object],
+43 silly batched        '@vue/eslint-config-airbnb' => [Object],
+43 silly batched        'babel-eslint' => [Object],
+43 silly batched        'eslint' => [Object],
+43 silly batched        'eslint-plugin-vue' => [Object],
+43 silly batched        'vue-template-compiler' => [Object],
+43 silly batched        '@vue/cli' => [Object],
+43 silly batched        'vue' => [Object],
+43 silly batched        'vue-router' => [Object],
+43 silly batched        'vuex' => [Object] },
+43 silly batched     localDependencies: Map {},
+43 silly batched     localDependents: Map {} } ]
+44 silly lifecycle No script for "preversion" in "vue-accounts", continuing
+45 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-example", continuing
+46 silly lifecycle No script for "preversion" in "@vue-accounts/core", continuing
+47 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-store", continuing
+48 silly lifecycle No script for "preversion" in "@vue-accounts/vuetify-components", continuing
+49 silly lifecycle No script for "version" in "@vue-accounts/meteor-store", continuing
+50 silly lifecycle No script for "version" in "@vue-accounts/meteor-example", continuing
+51 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
+52 silly lifecycle No script for "version" in "@vue-accounts/vuetify-components", continuing
+53 silly lifecycle No script for "preversion" in "@vue-accounts/bare-components", continuing
+54 silly lifecycle No script for "version" in "@vue-accounts/bare-components", continuing
+55 silly lifecycle No script for "preversion" in "@vue-accounts/ui-only-example", continuing
+56 silly lifecycle No script for "version" in "@vue-accounts/ui-only-example", continuing
+57 silly lifecycle No script for "version" in "vue-accounts", continuing
+58 silly gitAdd [ '/home/cloudspider/Server/open-source/vue-accounts/packages/meteor-store/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/meteor-accounts/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/vuetify-components/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/bare-components/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/vue-ui-only/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/lerna.json' ]
+59 silly gitCommit v0.0.7-alpha.0
+60 verbose git [ 'commit', '-m', 'v0.0.7-alpha.0' ]
+61 silly gitTag v0.0.7-alpha.0
+62 verbose git [ 'tag', 'v0.0.7-alpha.0', '-m', 'v0.0.7-alpha.0' ]
+63 silly lifecycle No script for "postversion" in "@vue-accounts/meteor-example", continuing
+64 silly lifecycle No script for "postversion" in "@vue-accounts/ui-only-example", continuing
+65 silly lifecycle No script for "postversion" in "@vue-accounts/bare-components", continuing
+66 silly lifecycle No script for "postversion" in "@vue-accounts/core", continuing
+67 silly lifecycle No script for "postversion" in "@vue-accounts/meteor-store", continuing
+68 silly lifecycle No script for "postversion" in "@vue-accounts/vuetify-components", continuing
+69 silly lifecycle No script for "postversion" in "vue-accounts", continuing
+70 info git Pushing tags...
+71 silly gitPush origin master
+72 silly batched [ PackageGraphNode {
+72 silly batched     name: '@vue-accounts/core',
+72 silly batched     externalDependencies: Map { 'babel-jest' => [Object] },
+72 silly batched     localDependencies: Map {},
+72 silly batched     localDependents: Map { '@vue-accounts/bare-components' => [Object] } },
+72 silly batched   PackageGraphNode {
+72 silly batched     name: '@vue-accounts/meteor-store',
+72 silly batched     externalDependencies:
+72 silly batched      Map {
+72 silly batched        'meteor-node-stubs' => [Object],
+72 silly batched        'meteor-package' => [Object] },
+72 silly batched     localDependencies: Map {},
+72 silly batched     localDependents: Map {} },
+72 silly batched   PackageGraphNode {
+72 silly batched     name: '@vue-accounts/vuetify-components',
+72 silly batched     externalDependencies: Map {},
+72 silly batched     localDependencies: Map {},
+72 silly batched     localDependents: Map {} } ]
+73 silly batched [ PackageGraphNode {
+73 silly batched     name: '@vue-accounts/bare-components',
+73 silly batched     externalDependencies: Map {},
+73 silly batched     localDependencies: Map {},
+73 silly batched     localDependents: Map {} } ]
+74 info publish Publishing packages to npm...
+75 info Verifying npm credentials
+76 verbose Retrieving npm user profile
+77 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 528ms
+78 silly npm profile get received {"tfa":false,"name":"cloudspider","email":"redroest@hotmail.com","email_verified":true,"created":"2015-06-29T12:21:44.433Z","updated":"2018-01-21T20:14:46.485Z","cidr_whitelist":null,"fullname":"Chris","homepage":"","twitter":"","github":""}
+79 silly npm whoami received {"username":"cloudspider"}
+80 silly verifyNpmPackageAccess
+81 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 284ms
+82 silly getCurrentSHA
+83 verbose getCurrentSHA c26f989cb9bd28cedc241edc43f144ecd47c8f82
+84 warn lifecycle Skipping root "prepublish" because it has already been called
+85 silly lifecycle No script for "prepare" in "vue-accounts", continuing
+86 silly lifecycle No script for "prepublishOnly" in "vue-accounts", continuing
+87 silly lifecycle No script for "prepack" in "vue-accounts", continuing
+88 verbose pack-directory packages/core
+89 verbose pack-directory packages/meteor-store
+90 verbose pack-directory packages/vuetify-components
+91 silly lifecycle No script for "prepublish" in "@vue-accounts/core", continuing
+92 silly lifecycle No script for "prepublish" in "@vue-accounts/meteor-store", continuing
+93 silly lifecycle No script for "prepublish" in "@vue-accounts/vuetify-components", continuing
+94 silly lifecycle No script for "prepare" in "@vue-accounts/core", continuing
+95 silly lifecycle No script for "prepare" in "@vue-accounts/meteor-store", continuing
+96 silly lifecycle No script for "prepare" in "@vue-accounts/vuetify-components", continuing
+97 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/core", continuing
+98 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/meteor-store", continuing
+99 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/vuetify-components", continuing
+100 silly lifecycle No script for "prepack" in "@vue-accounts/core", continuing
+101 silly lifecycle No script for "prepack" in "@vue-accounts/meteor-store", continuing
+102 silly lifecycle No script for "prepack" in "@vue-accounts/vuetify-components", continuing
+103 silly lifecycle No script for "postpack" in "@vue-accounts/meteor-store", continuing
+104 verbose packed @vue-accounts/meteor-store packages/meteor-store
+105 silly lifecycle No script for "postpack" in "@vue-accounts/core", continuing
+106 verbose packed @vue-accounts/core packages/core
+107 silly lifecycle No script for "postpack" in "@vue-accounts/vuetify-components", continuing
+108 verbose packed @vue-accounts/vuetify-components packages/vuetify-components
+109 verbose pack-directory packages/bare-components
+110 silly lifecycle No script for "prepublish" in "@vue-accounts/bare-components", continuing
+111 silly lifecycle No script for "prepare" in "@vue-accounts/bare-components", continuing
+112 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/bare-components", continuing
+113 silly lifecycle No script for "prepack" in "@vue-accounts/bare-components", continuing
+114 silly lifecycle No script for "postpack" in "@vue-accounts/bare-components", continuing
+115 verbose packed @vue-accounts/bare-components packages/bare-components
+116 silly lifecycle No script for "postpack" in "vue-accounts", continuing
+117 verbose publish @vue-accounts/core
+118 verbose publish @vue-accounts/meteor-store
+119 verbose publish @vue-accounts/vuetify-components
+120 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fmeteor-store 317ms
+121 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@vue-accounts%2fmeteor-store - You must sign up for private packages
+121 error     at res.buffer.catch.then.body (/home/cloudspider/Server/open-source/vue-accounts/node_modules/npm-registry-fetch/check-response.js:104:15)
+121 error     at <anonymous>
