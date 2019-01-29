@@ -1,6 +1,5 @@
 {
   "name": "meteor-vue-ssr-boilerplate",
-  "private": true,
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
