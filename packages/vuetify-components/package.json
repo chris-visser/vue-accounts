@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/vuetify-components",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Pre-made Vue Account components built with Vuetify",
   "license": "MIT",
   "main": "dist/.umd.js",
@@ -18,7 +18,6 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/.esm.js",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/.min.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "cross-env": "^5.2.0",
     "minimist": "^1.2.0",
@@ -30,10 +29,10 @@
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-uglify-es": "0.0.1",
     "rollup-plugin-vue": "^4.3.2",
-    "vue": "^2.5.21",
-    "vue-template-compiler": "^2.5.21",
     "vee-validate": "^2.1.4",
+    "vue": "^2.5.21",
     "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.5.21",
     "vuetify": "^1.4.0",
     "vuex": "^3.0.1"
   }
