@@ -35,5 +35,6 @@
     "vue-template-compiler": "^2.5.22",
     "vuepress": "^0.14.8",
     "vuex": "^3.0.1"
-  }
+  },
+  "gitHead": "6c1c144d28706470da0e22bd0d38059ed9e94880"
 }
