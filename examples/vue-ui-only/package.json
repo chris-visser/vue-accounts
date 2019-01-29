@@ -1,6 +1,8 @@
 {
-  "name": "vue-ui-only",
+  "name": "@vue-accounts/ui-only-example",
   "version": "0.0.6-alpha.0",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

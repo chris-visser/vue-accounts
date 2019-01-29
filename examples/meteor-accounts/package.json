@@ -1,5 +1,8 @@
 {
-  "name": "meteor-vue-ssr-boilerplate",
+  "name": "@vue-accounts/meteor-example",
+  "version": "0.0.6-alpha.0",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
