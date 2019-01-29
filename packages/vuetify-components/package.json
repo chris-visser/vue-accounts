@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/vuetify-components",
-  "version": "0.0.8-alpha.0",
+  "version": "0.0.9-alpha.0",
   "description": "Pre-made Vue Account components built with Vuetify",
   "license": "MIT",
   "main": "dist/.umd.js",
