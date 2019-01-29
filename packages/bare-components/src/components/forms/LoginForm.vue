@@ -1,7 +1,6 @@
 <template>
   <auth-form method="login">
     <template slot-scope="{status, error, submit}">
-
       <form @submit.prevent="submit({ email, password })">
         <p><strong>Status:</strong> {{status}}</p>
 
@@ -12,18 +11,22 @@
 
         <input type="submit" value="Login" />
       </form>
-
     </template>
   </auth-form>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        email: '',
-        password: '',
-      };
-    },
-  };
+import { AuthForm } from '@vue-accounts/core';
+
+export default {
+  components: {
+    AuthForm,
+  },
+  data() {
+    return {
+      email: '',
+      password: '',
+    };
+  },
+};
 </script>

@@ -1,5 +1,5 @@
 {
-  "name": "@vue-accounts/meteor-store",
+  "name": "@vue-accounts/meteor",
   "version": "0.0.8-alpha.0",
   "description": "Vue Accounts store for Meteor's account system",
   "license": "MIT",
@@ -36,5 +36,5 @@
     "vuepress": "^0.14.8",
     "vuex": "^3.0.1"
   },
-  "gitHead": "c26f989cb9bd28cedc241edc43f144ecd47c8f82"
+  "gitHead": "e93c496071b0e2b455e77ee211f8f6d7061e49c5"
 }

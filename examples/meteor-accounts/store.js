@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import { AccountStorePlugin } from '@vue-accounts/core';
-import MeteorStore, { StorePlugin } from '@vue-accounts/meteor-store';
+import AccountsCore, { VuexConnector, PasswordStrategy } from '@vue-accounts/core';
+import MeteorStore, { StorePlugin } from '@vue-accounts/meteor';
 
 Vue.use(Vuex);
 
@@ -13,6 +13,10 @@ const store = new Vuex.Store({
   },
 });
 
-Vue.use(AccountStorePlugin, { store });
+const Accounts = new AccountsCore(VuexConnector(store), [
+  PasswordStrategy()
+]);
+
+Vue.use(Accounts);
 
 export default store;

@@ -1,7 +1,7 @@
 <template>
-  <slot :status="status" :error="error" :submit="submit">
-    Add your form here!
-  </slot>
+  <div>
+    <slot :status="status" :error="error" :submit="submit" />
+  </div>
 </template>
 
 <script>
