@@ -1,7 +1,7 @@
 <template>
-  <auth-form method="login">
-    <template slot-scope="{status, error, submit}">
-      <form @submit.prevent="submit({ email, password })">
+  <div>
+    <auth-form method="login">
+      <form slot-scope="{status, error, submit}" @submit.prevent="submit({ email, password })">
         <p><strong>Status:</strong> {{status}}</p>
 
         <input type="text" name="email" v-model="email" placeholder="Email" />
@@ -11,8 +11,8 @@
 
         <input type="submit" value="Login" />
       </form>
-    </template>
-  </auth-form>
+    </auth-form>
+  </div>
 </template>
 
 <script>

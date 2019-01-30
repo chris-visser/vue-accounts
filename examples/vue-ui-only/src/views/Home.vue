@@ -1,6 +1,11 @@
 <template>
   <div class="home">
 
+    <!--<scoped-example>-->
+    <!--<p slot-scope="{status}">TEST {{status}}</p>-->
+    <!--</scoped-example>-->
+
+
     <div v-if="!isLoggedIn">
       <h1>Login</h1>
       <login-form />
@@ -16,10 +21,12 @@
 
 <script>
 import { LoginForm } from '@vue-accounts/bare-components';
+// import ScopedExample from '../components/ScopedExample';
 
 export default {
   name: 'home',
   components: {
+    // ScopedExample,
     LoginForm,
   },
   computed: {
