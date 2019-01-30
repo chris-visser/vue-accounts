@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/core",
-  "version": "0.0.9-alpha.0",
+  "version": "0.0.10-alpha.0",
   "description": "A set of extendable Vue plugins and mixins to speed up building an accounts system",
   "license": "MIT",
   "main": "dist/.umd.js",

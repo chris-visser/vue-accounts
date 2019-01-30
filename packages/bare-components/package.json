@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/bare-components",
-  "version": "0.0.9-alpha.0",
+  "version": "0.0.10-alpha.0",
   "description": "Minimal Vue Account components without any styling applied",
   "license": "MIT",
   "main": "dist/.umd.js",
@@ -22,7 +22,7 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/.min.js"
   },
   "dependencies": {
-    "@vue-accounts/core": "^0.0.9-alpha.0"
+    "@vue-accounts/core": "^0.0.10-alpha.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
