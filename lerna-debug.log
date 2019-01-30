@@ -5,16 +5,16 @@
 0 silly argv   '$0': '/home/cloudspider/Server/open-source/vue-accounts/node_modules/.bin/lerna' }
 1 notice cli v3.10.5
 2 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-3 verbose session 160fa04ab912a3c4
+3 verbose session c9c103ee283c1bc6
 4 verbose user-agent lerna/3.10.5/node@v8.14.0+x64 (linux)
-5 verbose git-describe undefined => "v0.0.9-alpha.0-1-gfb227d7"
-6 silly git-describe parsed => {"lastTagName":"v0.0.9-alpha.0","lastVersion":"v0.0.9-alpha.0","refCount":"1","sha":"fb227d7","isDirty":false}
+5 verbose git-describe undefined => "v0.0.10-alpha.0-1-ge6db761"
+6 silly git-describe parsed => {"lastTagName":"v0.0.10-alpha.0","lastVersion":"v0.0.10-alpha.0","refCount":"1","sha":"e6db761","isDirty":false}
 7 silly argv { _: [ 'publish' ],
 7 silly argv   composed: 'publish',
 7 silly argv   '--': [ '--access', 'public' ],
 7 silly argv   lernaVersion: '3.10.5' }
 8 verbose rootPath /home/cloudspider/Server/open-source/vue-accounts
-9 info current version 0.0.9-alpha.0
+9 info current version 0.0.10-alpha.0
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly currentBranch
@@ -24,26 +24,25 @@
 16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.9-alpha.0-1-gfb227d7" => {"lastTagName":"v0.0.9-alpha.0","lastVersion":"v0.0.9-alpha.0","refCount":"1","sha":"fb227d7","isDirty":false}
-20 info Looking for changed packages since v0.0.9-alpha.0
-21 silly diffSinceIn v0.0.9-alpha.0 examples/meteor-accounts
-22 silly diff
-23 silly diffSinceIn v0.0.9-alpha.0 examples/vue-ui-only
-24 silly diff examples/vue-ui-only/src/components/ScopedExample.js
-24 silly diff examples/vue-ui-only/src/views/Home.vue
-25 silly diffSinceIn v0.0.9-alpha.0 packages/bare-components
+19 silly git-describe.sync "v0.0.10-alpha.0-1-ge6db761" => {"lastTagName":"v0.0.10-alpha.0","lastVersion":"v0.0.10-alpha.0","refCount":"1","sha":"e6db761","isDirty":false}
+20 info Looking for changed packages since v0.0.10-alpha.0
+21 silly diffSinceIn v0.0.10-alpha.0 examples/meteor-accounts
+22 silly diff examples/meteor-accounts/App.vue
+22 silly diff examples/meteor-accounts/package-lock.json
+22 silly diff examples/meteor-accounts/package.json
+23 silly diffSinceIn v0.0.10-alpha.0 examples/vue-ui-only
+24 silly diff
+25 silly diffSinceIn v0.0.10-alpha.0 packages/bare-components
 26 silly diff packages/bare-components/package.json
 26 silly diff packages/bare-components/src/components/forms/ForgotPasswordForm.vue
 26 silly diff packages/bare-components/src/components/forms/LoginForm.vue
 26 silly diff packages/bare-components/src/components/forms/RegistrationForm.vue
 26 silly diff packages/bare-components/src/components/forms/ResetPasswordForm.vue
-27 silly diffSinceIn v0.0.9-alpha.0 packages/core
+27 silly diffSinceIn v0.0.10-alpha.0 packages/core
 28 silly diff packages/core/package.json
-28 silly diff packages/core/src/components/auth-form.js
-28 silly diff packages/core/src/components/auth-form.vue
-29 silly diffSinceIn v0.0.9-alpha.0 packages/meteor
+29 silly diffSinceIn v0.0.10-alpha.0 packages/meteor
 30 silly diff packages/meteor/package.json
-31 silly diffSinceIn v0.0.9-alpha.0 packages/vuetify-components
+31 silly diffSinceIn v0.0.10-alpha.0 packages/vuetify-components
 32 silly diff packages/vuetify-components/package.json
 33 verbose updated @vue-accounts/meteor-example
 34 verbose updated @vue-accounts/ui-only-example
@@ -51,8 +50,8 @@
 36 verbose updated @vue-accounts/core
 37 verbose updated @vue-accounts/meteor
 38 verbose updated @vue-accounts/vuetify-components
-39 verbose git-describe undefined => "v0.0.9-alpha.0-1-gfb227d7"
-40 silly git-describe parsed => {"lastTagName":"v0.0.9-alpha.0","lastVersion":"v0.0.9-alpha.0","refCount":"1","sha":"fb227d7","isDirty":false}
+39 verbose git-describe undefined => "v0.0.10-alpha.0-1-ge6db761"
+40 silly git-describe parsed => {"lastTagName":"v0.0.10-alpha.0","lastVersion":"v0.0.10-alpha.0","refCount":"1","sha":"e6db761","isDirty":false}
 41 silly batched [ PackageGraphNode {
 41 silly batched     name: '@vue-accounts/core',
 41 silly batched     externalDependencies:
@@ -78,7 +77,6 @@
 41 silly batched     localDependencies: Map {},
 41 silly batched     localDependents:
 41 silly batched      Map {
-41 silly batched        '@vue-accounts/meteor-example' => [Object],
 41 silly batched        '@vue-accounts/ui-only-example' => [Object],
 41 silly batched        '@vue-accounts/bare-components' => [Object] } },
 41 silly batched   PackageGraphNode {
@@ -126,18 +124,6 @@
 41 silly batched     localDependencies: Map {},
 41 silly batched     localDependents: Map {} } ]
 42 silly batched [ PackageGraphNode {
-42 silly batched     name: '@vue-accounts/meteor-example',
-42 silly batched     externalDependencies:
-42 silly batched      Map {
-42 silly batched        '@babel/runtime' => [Object],
-42 silly batched        '@vue-accounts/bare-components' => [Object],
-42 silly batched        'bcrypt' => [Object],
-42 silly batched        'meteor-node-stubs' => [Object],
-42 silly batched        'vue' => [Object],
-42 silly batched        'vuex' => [Object] },
-42 silly batched     localDependencies: Map {},
-42 silly batched     localDependents: Map {} },
-42 silly batched   PackageGraphNode {
 42 silly batched     name: '@vue-accounts/bare-components',
 42 silly batched     externalDependencies:
 42 silly batched      Map {
@@ -154,8 +140,23 @@
 42 silly batched        'vue' => [Object],
 42 silly batched        'vue-template-compiler' => [Object] },
 42 silly batched     localDependencies: Map {},
-42 silly batched     localDependents: Map { '@vue-accounts/ui-only-example' => [Object] } } ]
+42 silly batched     localDependents:
+42 silly batched      Map {
+42 silly batched        '@vue-accounts/meteor-example' => [Object],
+42 silly batched        '@vue-accounts/ui-only-example' => [Object] } } ]
 43 silly batched [ PackageGraphNode {
+43 silly batched     name: '@vue-accounts/meteor-example',
+43 silly batched     externalDependencies:
+43 silly batched      Map {
+43 silly batched        '@babel/runtime' => [Object],
+43 silly batched        '@vue-accounts/core' => [Object],
+43 silly batched        'bcrypt' => [Object],
+43 silly batched        'meteor-node-stubs' => [Object],
+43 silly batched        'vue' => [Object],
+43 silly batched        'vuex' => [Object] },
+43 silly batched     localDependencies: Map {},
+43 silly batched     localDependents: Map {} },
+43 silly batched   PackageGraphNode {
 43 silly batched     name: '@vue-accounts/ui-only-example',
 43 silly batched     externalDependencies:
 43 silly batched      Map {
@@ -178,26 +179,26 @@
 46 silly lifecycle No script for "preversion" in "@vue-accounts/meteor", continuing
 47 silly lifecycle No script for "preversion" in "@vue-accounts/vuetify-components", continuing
 48 silly lifecycle No script for "version" in "@vue-accounts/vuetify-components", continuing
-49 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
-50 silly lifecycle No script for "version" in "@vue-accounts/meteor", continuing
-51 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-example", continuing
-52 silly lifecycle No script for "preversion" in "@vue-accounts/bare-components", continuing
-53 silly lifecycle No script for "version" in "@vue-accounts/meteor-example", continuing
-54 silly lifecycle No script for "version" in "@vue-accounts/bare-components", continuing
-55 silly lifecycle No script for "preversion" in "@vue-accounts/ui-only-example", continuing
+49 silly lifecycle No script for "version" in "@vue-accounts/meteor", continuing
+50 silly lifecycle No script for "version" in "@vue-accounts/core", continuing
+51 silly lifecycle No script for "preversion" in "@vue-accounts/bare-components", continuing
+52 silly lifecycle No script for "version" in "@vue-accounts/bare-components", continuing
+53 silly lifecycle No script for "preversion" in "@vue-accounts/meteor-example", continuing
+54 silly lifecycle No script for "preversion" in "@vue-accounts/ui-only-example", continuing
+55 silly lifecycle No script for "version" in "@vue-accounts/meteor-example", continuing
 56 silly lifecycle No script for "version" in "@vue-accounts/ui-only-example", continuing
 57 silly lifecycle No script for "version" in "vue-accounts", continuing
 58 silly gitAdd [ '/home/cloudspider/Server/open-source/vue-accounts/packages/vuetify-components/package.json',
-58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
 58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/meteor/package.json',
-58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/meteor-accounts/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/core/package.json',
 58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/packages/bare-components/package.json',
+58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/meteor-accounts/package.json',
 58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/examples/vue-ui-only/package.json',
 58 silly gitAdd   '/home/cloudspider/Server/open-source/vue-accounts/lerna.json' ]
-59 silly gitCommit v0.0.10-alpha.0
-60 verbose git [ 'commit', '-m', 'v0.0.10-alpha.0' ]
-61 silly gitTag v0.0.10-alpha.0
-62 verbose git [ 'tag', 'v0.0.10-alpha.0', '-m', 'v0.0.10-alpha.0' ]
+59 silly gitCommit v0.0.11-alpha.0
+60 verbose git [ 'commit', '-m', 'v0.0.11-alpha.0' ]
+61 silly gitTag v0.0.11-alpha.0
+62 verbose git [ 'tag', 'v0.0.11-alpha.0', '-m', 'v0.0.11-alpha.0' ]
 63 silly lifecycle No script for "postversion" in "@vue-accounts/meteor-example", continuing
 64 silly lifecycle No script for "postversion" in "@vue-accounts/ui-only-example", continuing
 65 silly lifecycle No script for "postversion" in "@vue-accounts/bare-components", continuing
@@ -233,13 +234,13 @@
 74 info publish Publishing packages to npm...
 75 info Verifying npm credentials
 76 verbose Retrieving npm user profile
-77 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1048ms
+77 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 609ms
 78 silly npm profile get received {"tfa":false,"name":"cloudspider","email":"redroest@hotmail.com","email_verified":true,"created":"2015-06-29T12:21:44.433Z","updated":"2018-01-21T20:14:46.485Z","cidr_whitelist":null,"fullname":"Chris","homepage":"","twitter":"","github":""}
 79 silly npm whoami received {"username":"cloudspider"}
 80 silly verifyNpmPackageAccess
-81 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 789ms
+81 http fetch GET 200 https://registry.npmjs.org/-/org/cloudspider/package?format=cli 370ms
 82 silly getCurrentSHA
-83 verbose getCurrentSHA 19fc5ded8579e33b9e3a07113bc547a35625e798
+83 verbose getCurrentSHA 1fb82a15a83c491b2ba70e2c60ff949f8548d049
 84 warn lifecycle Skipping root "prepublish" because it has already been called
 85 silly lifecycle No script for "prepare" in "vue-accounts", continuing
 86 silly lifecycle No script for "prepublishOnly" in "vue-accounts", continuing
@@ -257,8 +258,8 @@
 98 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/meteor", continuing
 99 silly lifecycle No script for "prepublishOnly" in "@vue-accounts/vuetify-components", continuing
 100 silly lifecycle No script for "prepack" in "@vue-accounts/core", continuing
-101 silly lifecycle No script for "prepack" in "@vue-accounts/meteor", continuing
-102 silly lifecycle No script for "prepack" in "@vue-accounts/vuetify-components", continuing
+101 silly lifecycle No script for "prepack" in "@vue-accounts/vuetify-components", continuing
+102 silly lifecycle No script for "prepack" in "@vue-accounts/meteor", continuing
 103 silly lifecycle No script for "postpack" in "@vue-accounts/meteor", continuing
 104 verbose packed @vue-accounts/meteor packages/meteor
 105 silly lifecycle No script for "postpack" in "@vue-accounts/core", continuing
@@ -276,7 +277,7 @@
 117 verbose publish @vue-accounts/core
 118 verbose publish @vue-accounts/meteor
 119 verbose publish @vue-accounts/vuetify-components
-120 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fvuetify-components 819ms
+120 http fetch PUT 402 https://registry.npmjs.org/@vue-accounts%2fvuetify-components 619ms
 121 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@vue-accounts%2fvuetify-components - You must sign up for private packages
 121 error     at res.buffer.catch.then.body (/home/cloudspider/Server/open-source/vue-accounts/node_modules/npm-registry-fetch/check-response.js:104:15)
 121 error     at <anonymous>
