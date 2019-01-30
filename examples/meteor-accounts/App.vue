@@ -1,11 +1,11 @@
 <template>
   <main>
     <TheHeader />
-    <!--<button @click="$logout" v-if="isLoggedIn">Logout</button>-->
+    <button @click="$logout" v-if="isLoggedIn">Logout</button>
 
     <login-form v-if="!isLoggedIn" />
 
-    <!--<registration-form />-->
+    <registration-form />
   </main>
 </template>
 

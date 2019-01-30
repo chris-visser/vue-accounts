@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "@vue-accounts/bare-components": "0.0.5-alpha.0",
-    "@vue-accounts/core": "^0.0.10-alpha.0",
-    "@vue-accounts/meteor": "^0.0.10-alpha.0",
+    "@vue-accounts/bare-components": "0.0.10-alpha.0",
+    "@vue-accounts/core": "0.0.9-alpha.0",
+    "@vue-accounts/meteor": "0.0.10-alpha.0",
     "bcrypt": "^3.0.3",
     "meteor-node-stubs": "^0.4.1",
     "vue": "^2.5.22",

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="auth-form login-form">
     <auth-form method="login">
       <form slot-scope="{status, error, submit}" @submit.prevent="submit({ email, password })">
         <p><strong>Status:</strong> {{status}}</p>
