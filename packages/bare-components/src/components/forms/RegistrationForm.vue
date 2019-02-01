@@ -2,7 +2,7 @@
   <div class="auth-form registration-form">
     <auth-form method="register">
       <form slot-scope="{status, error, submit}"
-            @submit.prevent="submit({email, profile, password, repeatPassword})">
+            @submit.prevent="submit({email, password, displayName, repeatPassword})">
         <p><strong>Status:</strong> {{status}}</p>
 
         <input type="text" name="email" v-model="email" placeholder="Email address" />
