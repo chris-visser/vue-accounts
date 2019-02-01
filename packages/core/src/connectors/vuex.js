@@ -1,5 +1,3 @@
-
-
 /**
  * Simply transforms the dispatched Accounts actions to Vuex actions
  * @param {Vuex} store - Instance of the Vuex Store
@@ -7,10 +5,17 @@
  * @returns {{action(*, *=): Promise<void>}}
  * @constructor
  */
-export default (store, namespace) => ({
-  async action(name, payload) {
-    const modulePath = namespace ? `${namespace}/` : '';
+export default (store, { namespace }) => {
 
-    return await store.dispatch(modulePath + name, payload);
-  },
-});
+  if (namespace && typeof namespace !== 'string') {
+    throw new Error(`Expected namespace to be a string, ${typeof namespace} given`);
+  }
+
+  return {
+    async action(name, payload) {
+      const modulePath = namespace ? `${namespace}/` : '';
+
+      return await store.dispatch(modulePath + name, payload);
+    },
+  };
+};

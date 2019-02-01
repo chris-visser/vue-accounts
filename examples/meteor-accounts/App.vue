@@ -1,7 +1,7 @@
 <template>
   <main>
     <TheHeader />
-    <button @click="$logout" v-if="isLoggedIn">Logout</button>
+    <button @click="onClick" v-if="isLoggedIn">Logout</button>
 
     <login-form v-if="!isLoggedIn" />
 
@@ -22,6 +22,12 @@
     computed: {
       isLoggedIn() {
         return this.$store.state.account.userId;
+      }
+    },
+    methods: {
+      onClick() {
+        console.log('??');
+        this.$accounts.logout();
       }
     }
   };
