@@ -7,6 +7,10 @@
  */
 export default (store, { namespace }) => {
 
+  if(!store) {
+    throw new Error('A VueX store instance is required');
+  }
+
   if (namespace && typeof namespace !== 'string') {
     throw new Error(`Expected namespace to be a string, ${typeof namespace} given`);
   }
