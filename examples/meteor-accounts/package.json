@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/meteor-example",
-  "version": "0.0.13-alpha.0",
+  "version": "0.0.13-alpha.1",
   "license": "MIT",
   "private": true,
   "scripts": {
