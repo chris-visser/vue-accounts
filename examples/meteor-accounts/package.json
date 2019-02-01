@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "@vue-accounts/bare-components": "^0.0.14-alpha.0",
-    "@vue-accounts/core": "^0.0.14-alpha.0",
+    "@vue-accounts/bare-components": "0.0.14-alpha.0",
+    "@vue-accounts/core": "0.0.14-alpha.0",
     "@vue-accounts/meteor": "0.0.12-alpha.0",
     "bcrypt": "^3.0.3",
     "meteor-node-stubs": "^0.4.1",
@@ -21,7 +21,8 @@
   },
   "meteor": {
     "mainModule": {
-      "client": "client.js"
+      "client": "client.js",
+      "server": "server.js"
     }
   }
 }

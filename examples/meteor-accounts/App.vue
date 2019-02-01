@@ -1,34 +1,38 @@
 <template>
-  <main>
-    <TheHeader />
-    <button @click="onClick" v-if="isLoggedIn">Logout</button>
+  <account>
+    <main slot-scope="{detailsLoaded, profile}">
+      <TheHeader />
 
-    <login-form v-if="!isLoggedIn" />
+      <div v-if="detailsLoaded">
+        <h1>Welcome {{profile.displayName}}</h1>
+        <button @click="onClick" v-if="detailsLoaded">Logout</button>
+      </div>
 
-    <registration-form />
-  </main>
+      <div v-else>
+        <login-form />
+
+        <registration-form />
+      </div>
+    </main>
+  </account>
 </template>
 
 <script>
-  import TheHeader from './components/TheHeader';
-  import { LoginForm, RegistrationForm } from '@vue-accounts/bare-components';
+import Account from './components/Account';
+import TheHeader from './components/TheHeader';
+import { LoginForm, RegistrationForm } from '@vue-accounts/bare-components';
 
-  export default {
-    components: {
-      RegistrationForm,
-      LoginForm,
-      TheHeader,
+export default {
+  components: {
+    Account,
+    RegistrationForm,
+    LoginForm,
+    TheHeader,
+  },
+  methods: {
+    onClick() {
+      this.$accounts.logout();
     },
-    computed: {
-      isLoggedIn() {
-        return this.$store.state.account.userId;
-      }
-    },
-    methods: {
-      onClick() {
-        console.log('??');
-        this.$accounts.logout();
-      }
-    }
-  };
+  },
+};
 </script>

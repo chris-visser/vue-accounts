@@ -1,11 +1,13 @@
 /**
  * Simply transforms the dispatched Accounts actions to Vuex actions
  * @param {Vuex} store - Instance of the Vuex Store
- * @param {String} namespace - A namespace in case your account store is namespaced
+ * @param {Object} options - Additional options
+ * @param {String} options.namespace - A namespace in case your account store is namespaced
  * @returns {{action(*, *=): Promise<void>}}
  * @constructor
  */
-export default (store, { namespace }) => {
+export default (store, options) => {
+  const { namespace } = options || {};
 
   if(!store) {
     throw new Error('A VueX store instance is required');

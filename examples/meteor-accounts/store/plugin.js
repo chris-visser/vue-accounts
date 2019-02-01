@@ -11,6 +11,16 @@ export default (store) => {
    * Tracks changes on the user
    */
   if (Meteor.isClient) {
+
+    Tracker.autorun(() => {
+      if(Meteor.loggingIn()) {
+        store.commit('account/setLoggingIn');
+      } else {
+        store.commit('account/unsetLoggingIn');
+      }
+    });
+
+
     Tracker.autorun(() => {
       const user = Meteor.user();
 
