@@ -4,7 +4,8 @@ export default {
   },
   computed: {
     account() {
-      return this.$store.state.account;
+      console.log(this.$accounts.$connector);
+      return this.$store.state[this.namespace];
     },
   },
 

@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 
 export default {
-  namespaced: 'account',
+  namespaced: true,
 
   state: {
     isLoggingIn: false,
@@ -114,7 +114,13 @@ export default {
         });
       });
     },
-
+    /**
+     * When users click on the verification e-mail they will return with a token
+     * This method accepts that token and sets the flag and verifies the e-mail
+     * @param context
+     * @param token
+     * @returns {Promise<any>}
+     */
     verifyEmail(context, { token }) {
       return new Promise((resolve, reject) => {
         Accounts.verifyEmail(token, (error, result) => {

@@ -1,31 +1,35 @@
 import { Meteor } from 'meteor/meteor';
 import { Tracker } from 'meteor/tracker';
 
+import meteorStore from './store';
+
 /**
  * This plugin tracks the user's session with Meteor Tracker and
  * keeps it in sync with the Vuex user store
  * @param store
  */
-export default (store) => {
+export default ({ storeName = 'account' }) => (store) => {
+
+  const modulePath = storeName ? `${storeName}/` : '';
+
   /**
    * Tracks changes on the user
    */
   if (Meteor.isClient) {
 
     Tracker.autorun(() => {
-      if(Meteor.loggingIn()) {
-        store.commit('account/setLoggingIn');
+      if (Meteor.loggingIn()) {
+        store.commit(`${modulePath}setLoggingIn`);
       } else {
-        store.commit('account/unsetLoggingIn');
+        store.commit(`${modulePath}unsetLoggingIn`);
       }
     });
-
 
     Tracker.autorun(() => {
       const user = Meteor.user();
 
       if (user) {
-        store.commit('account/setUser', user);
+        store.commit(`${modulePath}setUser`, user);
       }
     });
 
@@ -42,7 +46,7 @@ export default (store) => {
 
       // Only commit 'unsetUser' when userId was changed and set to empty
       if (!userId) {
-        store.commit('account/unsetUser');
+        store.commit(`${modulePath}unsetUser`);
       }
     });
   }

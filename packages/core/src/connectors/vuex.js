@@ -9,7 +9,7 @@
 export default (store, options) => {
   const { namespace } = options || {};
 
-  if(!store) {
+  if (!store) {
     throw new Error('A VueX store instance is required');
   }
 
@@ -22,6 +22,10 @@ export default (store, options) => {
       const modulePath = namespace ? `${namespace}/` : '';
 
       return await store.dispatch(modulePath + name, payload);
+    },
+
+    config: {
+      namespace,
     },
   };
 };

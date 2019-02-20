@@ -3,7 +3,7 @@
   "version": "0.0.15-alpha.0",
   "description": "A set of extendable Vue plugins and mixins to speed up building an accounts system",
   "license": "MIT",
-  "main": "dist/.umd.js",
+  "main": "src/entry.js",
   "module": "dist/.esm.js",
   "unpkg": "dist/.min.js",
   "browser": {

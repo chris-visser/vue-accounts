@@ -7,7 +7,7 @@
         <input type="text" name="email" v-model="email" placeholder="Email" />
         <input type="password" name="password" v-model="password" placeholder="Password" />
 
-        <p v-if="error" class="error"><strong>Error:</strong> {{error}}</p>
+        <p v-if="error" class="error"><strong>Error:</strong> {{ error }}</p>
 
         <input type="submit" value="Login" />
       </form>

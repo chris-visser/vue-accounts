@@ -38,6 +38,11 @@ export default class AccountsCore {
       writable: true,
     });
 
+    Object.defineProperty(Vue.prototype.$accounts, '$connector', {
+      value: this.connector.config,
+      writable: true,
+    });
+
     for (let i = 0, count = this.strategies.length; i < count; i++) {
       this._addStrategy(Vue, this.strategies[i]);
     }

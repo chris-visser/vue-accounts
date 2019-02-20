@@ -9,8 +9,10 @@
       </div>
 
       <div v-else>
+        <h2>Login</h2>
         <login-form />
 
+        <h2>Registration</h2>
         <registration-form />
       </div>
     </main>
