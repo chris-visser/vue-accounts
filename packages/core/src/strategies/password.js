@@ -1,6 +1,5 @@
 /**
  * Exposes methods related to a regular password flow
- * @returns {{login(*=): Promise<*>, logout(*=): Promise<*>, register(*=): Promise<*>, verifyEmail(*=): Promise<*>, forgotPassword(*=): Promise<*>, resetPassword(*=): Promise<*>}}
  * @constructor
  */
 export default () => ({

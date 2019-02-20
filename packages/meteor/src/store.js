@@ -48,7 +48,6 @@ export default {
   actions: {
     register(context, { email, password, displayName }) {
       return new Promise((resolve, reject) => {
-        console.log(displayName);
         Accounts.createUser({ email, password, profile: { displayName } }, (error, result) => {
           if (error) {
             reject(error.reason);
