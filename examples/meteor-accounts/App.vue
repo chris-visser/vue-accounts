@@ -22,8 +22,9 @@
 
 <script>
 import { Account } from '@vue-accounts/meteor';
-import { LoginForm, RegistrationForm } from '@vue-accounts/bare-components';
+import { LoginForm } from '@vue-accounts/bare-components';
 
+import RegistrationForm from './components/RegistrationForm';
 import TheHeader from './components/TheHeader';
 
 export default {
