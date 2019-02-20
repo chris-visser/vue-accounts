@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/meteor-example",
-  "version": "0.0.17-alpha.2",
+  "version": "0.0.17-alpha.3",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "@vue-accounts/bare-components": "0.0.17-alpha.1",
-    "@vue-accounts/core": "0.0.17-alpha.1",
-    "@vue-accounts/meteor": "0.0.17-alpha.2",
+    "@vue-accounts/bare-components": "^0.0.17-alpha.3",
+    "@vue-accounts/core": "^0.0.17-alpha.3",
+    "@vue-accounts/meteor": "^0.0.17-alpha.3",
     "bcrypt": "^3.0.3",
     "meteor-node-stubs": "^0.4.1",
     "vue": "^2.5.22",

@@ -1,6 +1,6 @@
 {
   "name": "@vue-accounts/ui-only-example",
-  "version": "0.0.17-alpha.1",
+  "version": "0.0.17-alpha.3",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -9,8 +9,8 @@
     "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "@vue-accounts/bare-components": "^0.0.17-alpha.1",
-    "@vue-accounts/core": "^0.0.17-alpha.1",
+    "@vue-accounts/bare-components": "^0.0.17-alpha.3",
+    "@vue-accounts/core": "^0.0.17-alpha.3",
     "@vue/cli": "^3.3.0",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1",
