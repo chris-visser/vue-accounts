@@ -3,15 +3,14 @@ import Vuex from 'vuex';
 
 import AccountsCore, { VuexConnector, PasswordStrategy } from '@vue-accounts/core';
 
-import userStore from './store/store';
-import MeteorStorePlugin from './store/plugin';
+import userStore, { StorePlugin } from '@vue-accounts/meteor';
 
 Vue.use(Vuex);
 
 const STORE_NAME = 'user'; // Centralize the store name
 
 // Connects Meteor's Reactive user to a specified Vuex Store
-const MeteorPlugin = MeteorStorePlugin({ storeName: STORE_NAME });
+const MeteorPlugin = StorePlugin({ storeName: STORE_NAME });
 
 // Initialize the store as normal
 const store = new Vuex.Store({

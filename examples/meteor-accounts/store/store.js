@@ -1,7 +1,5 @@
-import getMeteorClientPackage from './getAtmospherePackage';
-
-const { Meteor } = getMeteorClientPackage('meteor');
-const { Accounts } = getMeteorClientPackage('accounts-base');
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
 
 export default {
   namespaced: true,

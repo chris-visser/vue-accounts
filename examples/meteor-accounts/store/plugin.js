@@ -1,7 +1,5 @@
-import getMeteorClientPackage from './getAtmospherePackage';
-
-const { Meteor } = getMeteorClientPackage('meteor');
-const { Tracker } = getMeteorClientPackage('tracker');
+import { Meteor } from 'meteor/meteor';
+import { Tracker } from 'meteor/tracker';
 
 /**
  * This plugin tracks the user's session with Meteor Tracker and
