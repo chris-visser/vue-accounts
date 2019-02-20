@@ -1,45 +1,53 @@
-import getMeteorClientPackage from './getAtmospherePackage';
-
-const { Meteor } = getMeteorClientPackage('meteor');
-const { Accounts } = getMeteorClientPackage('accounts-base');
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
 
 export default {
+  namespaced: true,
+
   state: {
+    isLoggingIn: false,
+    detailsLoaded: false,
     userId: null, // On initial load the userId will come from Meteor.userId()
     email: null,
     isEmailVerified: null,
     profile: null,
-    userDetailsLoaded: false,
   },
   mutations: {
+    setLoggingIn(state) {
+      state.isLoggingIn = true;
+    },
+    unsetLoggingIn(state) {
+      state.isLoggingIn = false;
+    },
     unsetUser(state) {
       state.userId = null;
       state.email = null;
       state.isEmailVerified = null;
       state.profile = null;
-      state.userDetailsLoaded = false;
+      state.detailsLoaded = false;
     },
     setUser(state, { _id, emails, profile }) {
       const { address, verified } = emails && emails[0] ? emails[0] : {};
       state.userId = _id;
       state.email = address;
       state.isEmailVerified = verified;
-      state.profile = profile;
+      state.profile = profile || {};
 
       // In Meteor the Meteor.userId() can be set while Meteor.user() is still empty
       // This is because the Meteor.userId() comes from the session cookie and Meteor.user()
       // gets its data from a publication. Each new login or page refresh, the client will
       // subscribe to the server and during that time Meteor.user() will be empty
-      // The userDetailsLoaded will be set to true when Meteor.user() is filled for the first time
-      if (!state.userDetailsLoaded) {
-        state.userDetailsLoaded = true;
+      // The detailsLoaded will be set to true when Meteor.user() is filled for the first time
+      if (!state.detailsLoaded) {
+        state.detailsLoaded = true;
       }
     },
   },
   actions: {
-    register(context, { email, password, profile }) {
+    register(context, { email, password, displayName }) {
       return new Promise((resolve, reject) => {
-        Accounts.createUser({ email, password, profile }, (error, result) => {
+        console.log(displayName);
+        Accounts.createUser({ email, password, profile: { displayName } }, (error, result) => {
           if (error) {
             reject(error.reason);
           } else {
@@ -106,7 +114,13 @@ export default {
         });
       });
     },
-
+    /**
+     * When users click on the verification e-mail they will return with a token
+     * This method accepts that token and sets the flag and verifies the e-mail
+     * @param context
+     * @param token
+     * @returns {Promise<any>}
+     */
     verifyEmail(context, { token }) {
       return new Promise((resolve, reject) => {
         Accounts.verifyEmail(token, (error, result) => {
@@ -118,5 +132,20 @@ export default {
         });
       });
     },
+    /**
+     * Removes the user's account
+     * @returns {Promise<any>}
+     */
+    removeAccount() {
+      return new Promise((resolve, reject) => {
+        Meteor.call('removeAccount', (error, result) => {
+          if (error) {
+            reject(error.reason);
+          } else {
+            resolve(result);
+          }
+        });
+      });
+    }
   },
 };

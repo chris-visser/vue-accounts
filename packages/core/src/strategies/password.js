@@ -22,4 +22,7 @@ export default () => ({
   async resetPassword(payload) {
     return await this.dispatch('resetPassword', payload);
   },
+  async removeAccount(payload) {
+    return await this.dispatch('removeAccount', payload);
+  },
 });

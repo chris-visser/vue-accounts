@@ -5,7 +5,8 @@
 
       <div v-if="detailsLoaded">
         <h1>Welcome {{profile.displayName}}</h1>
-        <button @click="onClick" v-if="detailsLoaded">Logout</button>
+        <button @click="$accounts.logout">Logout</button>
+        <button @click="$accounts.removeAccount">Remove Account</button>
       </div>
 
       <div v-else>
@@ -20,9 +21,10 @@
 </template>
 
 <script>
-import Account from './components/Account';
-import TheHeader from './components/TheHeader';
+import { Account } from '@vue-accounts/meteor';
 import { LoginForm, RegistrationForm } from '@vue-accounts/bare-components';
+
+import TheHeader from './components/TheHeader';
 
 export default {
   components: {
@@ -30,11 +32,6 @@ export default {
     RegistrationForm,
     LoginForm,
     TheHeader,
-  },
-  methods: {
-    onClick() {
-      this.$accounts.logout();
-    },
   },
 };
 </script>
